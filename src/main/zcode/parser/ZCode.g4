@@ -71,31 +71,53 @@ statement_list
 	: statement statement_list
 	|
 	;
-statement
+statement: simple_statement | condition_statement;
+simple_statement
 	: variable_declaration
 	| assignment_statement
-	| condition_statement
-	| for_statement
 	| break_statement
 	| continue_statement
 	| return_statement
 	| function_call_statement
 	| block
+	| for_statement
 	;
 
-assignment_statement: ASSIGNMENT;
-condition_statement: if_statement elif_list (else_statement | );
+condition_statement: open_statement | close_statement;
 
-elif_list
-	: elif_statement elif_list
+open_statement
+	: open_if open_elif_list
+	| close_if close_elif_list open_else
+	;
+close_statement
+	: simple_statement
+	| close_if close_elif_list close_else
+	;
+
+open_if
+	: IF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list (simple_statement | open_statement );
+close_if: IF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list close_statement ;
+
+open_else: ELSE nullable_newline_list open_statement;
+close_else: ELSE nullable_newline_list close_statement;
+
+open_elif_list
+	: open_elif open_elif_list
 	|
 	;
-if_statement: IF expression nullable_newline_list statement;
-elif_statement: ELIF expression nullable_newline_list statement;
-else_statement: ELSE expression nullable_newline_list statement;
+close_elif_list
+	: close_elif close_elif_list
+	|
+	;
 
-for_statement: FOR expression UNTIL expression BY expression nullable_newline_list statement;
+open_elif
+	: ELIF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list (simple_statement | open_statement);
+close_elif: ELIF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list close_statement;
 
+
+for_statement: FOR IDENTIFIER UNTIL expression BY expression nullable_newline_list statement;
+
+assignment_statement: ASSIGNMENT newline_list;
 return_statement: RETURN expression newline_list;
 break_statement: BREAK newline_list;
 continue_statement: CONTINUE newline_list;
@@ -110,9 +132,43 @@ extra_argument_list
 	: COMMA expression extra_argument_list
 	|
 	;
-expression: 'expr';
+expression
+	: expression1 STRING_CONCATENATION expression1
+	| expression1
+	;
+expression1
+	: expression2 relational_operator expression2
+	| expression2
+	;
+relational_operator
+	: EQUAL | STRING_COMPARISION | NOT_EQUAL 
+	| LESS_THAN | GREATER_THAN 
+	| LESS_THAN_OR_EQUAL | GREATER_THAN_OR_EQUAL
+	;
 
+expression2
+	: expression2 (AND | OR) expression3
+	| expression3
+	;
+expression3
+	: expression3 (PLUS | MINUS) expression4
+	| expression4
+	;
+expression4
+	: expression4 (MULTIPLY | DIVIDE | MODULO) expression5
+	| expression5
+	;
+expression5
+	: NOT expression5
+	| expression6
+	;
+expression6:;
 
+array_extract_expression: (IDENTIFIER | function_call) LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
+index_operators
+	: expression COMMA index_operators
+	| expression
+	;
 newline_list
 	: NEWLINE newline_list
 	| NEWLINE
