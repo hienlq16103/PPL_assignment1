@@ -71,7 +71,7 @@ statement_list
 	: statement statement_list
 	|
 	;
-statement: simple_statement | condition_statement;
+statement: simple_statement | conditional_statement;
 simple_statement
 	: variable_declaration
 	| assignment_statement
@@ -83,7 +83,7 @@ simple_statement
 	| for_statement
 	;
 
-condition_statement: open_statement | close_statement;
+conditional_statement: open_statement | close_statement;
 
 open_statement
 	: open_if open_elif_list
@@ -117,7 +117,7 @@ close_elif: ELIF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_
 
 for_statement: FOR IDENTIFIER UNTIL expression BY expression nullable_newline_list statement;
 
-assignment_statement: ASSIGNMENT newline_list;
+assignment_statement: (IDENTIFIER | array_extract_expression) ASSIGNMENT expression newline_list;
 return_statement: RETURN expression newline_list;
 break_statement: BREAK newline_list;
 continue_statement: CONTINUE newline_list;
@@ -132,6 +132,7 @@ extra_argument_list
 	: COMMA expression extra_argument_list
 	|
 	;
+
 expression
 	: expression1 STRING_CONCATENATION expression1
 	| expression1
@@ -140,12 +141,6 @@ expression1
 	: expression2 relational_operator expression2
 	| expression2
 	;
-relational_operator
-	: EQUAL | STRING_COMPARISION | NOT_EQUAL 
-	| LESS_THAN | GREATER_THAN 
-	| LESS_THAN_OR_EQUAL | GREATER_THAN_OR_EQUAL
-	;
-
 expression2
 	: expression2 (AND | OR) expression3
 	| expression3
@@ -162,13 +157,29 @@ expression5
 	: NOT expression5
 	| expression6
 	;
-expression6:;
+expression6
+	: MINUS expression6
+	| expression7
+	;
+expression7
+	: NUMBER | BOOLEAN | STRING | IDENTIFIER | element_expression | function_call | sub_expression;
 
-array_extract_expression: (IDENTIFIER | function_call) LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
+sub_expression: LEFT_PARENTHESIS expression RIGHT_PARENTHESIS ;
+
+relational_operator
+	: EQUAL | STRING_COMPARISION | NOT_EQUAL 
+	| LESS_THAN | GREATER_THAN 
+	| LESS_THAN_OR_EQUAL | GREATER_THAN_OR_EQUAL
+	;
+
+element_expression: (IDENTIFIER | function_call) LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
+function_extract_expression: function_call LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
+array_extract_expression: IDENTIFIER LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
 index_operators
 	: expression COMMA index_operators
 	| expression
 	;
+
 newline_list
 	: NEWLINE newline_list
 	| NEWLINE
