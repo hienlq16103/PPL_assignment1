@@ -32,61 +32,17 @@ array_size_list
 	| NUMBER
 	;
 array_value
-	: (single_dimension_number | single_dimension_string | single_dimension_bool)
-	| LEFT_SQUARE_BRACKET (multi_dimension_number | multi_dimension_string | multi_dimension_bool)  RIGHT_SQUARE_BRACKET
+	: single_dimension_value
+	| LEFT_SQUARE_BRACKET multi_dimension_value RIGHT_SQUARE_BRACKET
 	;
-
-multi_dimension_number
-	: single_dimension_number extra_dimension_number
-	|
+multi_dimension_value
+	: single_dimension_value COMMA multi_dimension_value
+	| single_dimension_value
 	;
-extra_dimension_number
-	: COMMA single_dimension_number extra_dimension_number
-	|
-	;
-multi_dimension_string
-	: single_dimension_string extra_dimension_string
-	|
-	;
-extra_dimension_string
-	: COMMA single_dimension_string extra_dimension_string
-	|
-	;
-multi_dimension_bool
-	: single_dimension_bool extra_dimension_bool
-	|
-	;
-extra_dimension_bool
-	: COMMA single_dimension_bool extra_dimension_bool
-	|
-	;
-
-single_dimension_number : LEFT_SQUARE_BRACKET array_number RIGHT_SQUARE_BRACKET;
-single_dimension_string: LEFT_SQUARE_BRACKET array_string RIGHT_SQUARE_BRACKET;
-single_dimension_bool: LEFT_SQUARE_BRACKET array_bool RIGHT_SQUARE_BRACKET;
-array_number
-	: NUMBER extra_array_number
-	|
-	;
-extra_array_number
-	: COMMA NUMBER extra_array_number
-	|
-	;
-array_string
-	: STRING extra_array_string
-	|
-	;
-extra_array_string
-	: COMMA STRING extra_array_string
-	|
-	;
-array_bool
-	: BOOLEAN extra_array_bool
-	|
-	;
-extra_array_bool
-	: COMMA BOOLEAN extra_array_bool
-	|
+single_dimension_value: LEFT_SQUARE_BRACKET array_element_list RIGHT_SQUARE_BRACKET;
+array_element_list
+	: expression COMMA array_element_list
+	| expression
 	;
 
 function_declaration
