@@ -118,7 +118,10 @@ close_elif: ELIF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_
 for_statement: FOR IDENTIFIER UNTIL expression BY expression nullable_newline_list statement;
 
 assignment_statement: (IDENTIFIER | array_extract_expression) ASSIGNMENT expression newline_list;
-return_statement: RETURN expression newline_list;
+return_statement
+	: RETURN expression newline_list
+	| RETURN newline_list
+	;
 break_statement: BREAK newline_list;
 continue_statement: CONTINUE newline_list;
 
@@ -162,7 +165,7 @@ expression6
 	| expression7
 	;
 expression7
-	: NUMBER | BOOLEAN | STRING | IDENTIFIER | element_expression | function_call | sub_expression;
+	: NUMBER | BOOLEAN | STRING | IDENTIFIER | element_extract_expression | function_call | sub_expression;
 
 sub_expression: LEFT_PARENTHESIS expression RIGHT_PARENTHESIS ;
 
@@ -172,7 +175,7 @@ relational_operator
 	| LESS_THAN_OR_EQUAL | GREATER_THAN_OR_EQUAL
 	;
 
-element_expression: (IDENTIFIER | function_call) LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
+element_extract_expression: (IDENTIFIER | function_call) LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
 function_extract_expression: function_call LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
 array_extract_expression: IDENTIFIER LEFT_SQUARE_BRACKET index_operators RIGHT_SQUARE_BRACKET;
 index_operators
@@ -185,7 +188,7 @@ newline_list
 	| NEWLINE
 	;
 nullable_newline_list
-	: NEWLINE newline_list
+	: NEWLINE nullable_newline_list
 	|
 	;
 //======================= TOKENS =======================
@@ -260,7 +263,7 @@ IDENTIFIER: [a-zA-Z_] [a-zA-Z0-9_]*;
 WS : [ \t\b\f]+ -> skip ; // skip spaces, tabs, newlines
 ILLEGAL_ESCAPE: '"' (ESCAPE_SEQUENCE | ~["\r\n\\])* '\\' ~[bfrnt'\\] {raise IllegalEscape(self.text[1:])};
 UNCLOSE_STRING: '"' (ESCAPE_SEQUENCE | ~["\r\n\\])* {raise UncloseString(self.text[1:])};
-ERROR_CHAR: . {raise ErrorToken(self.text)};
+ERROR_TOKEN: . {raise ErrorToken(self.text)};
 
 //======================= FRAGMENTS =======================
 //----------------------- Literals ----------------------

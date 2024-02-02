@@ -212,7 +212,7 @@ class ZCodeLexer(Lexer):
     WS = 46
     ILLEGAL_ESCAPE = 47
     UNCLOSE_STRING = 48
-    ERROR_CHAR = 49
+    ERROR_TOKEN = 49
 
     channelNames = [ u"DEFAULT_TOKEN_CHANNEL", u"HIDDEN" ]
 
@@ -236,7 +236,7 @@ class ZCodeLexer(Lexer):
             "OR", "LEFT_PARENTHESIS", "RIGHT_PARENTHESIS", "LEFT_SQUARE_BRACKET", 
             "RIGHT_SQUARE_BRACKET", "COMMA", "NEWLINE", "NUMBER", "BOOLEAN", 
             "STRING", "COMMENT", "IDENTIFIER", "WS", "ILLEGAL_ESCAPE", "UNCLOSE_STRING", 
-            "ERROR_CHAR" ]
+            "ERROR_TOKEN" ]
 
     ruleNames = [ "TYPE_NUMBER", "TYPE_BOOL", "TYPE_STRING", "VAR", "DYNAMIC", 
                   "RETURN", "FUNCTION", "FOR", "UNTIL", "BY", "BREAK", "CONTINUE", 
@@ -247,7 +247,7 @@ class ZCodeLexer(Lexer):
                   "NOT", "AND", "OR", "LEFT_PARENTHESIS", "RIGHT_PARENTHESIS", 
                   "LEFT_SQUARE_BRACKET", "RIGHT_SQUARE_BRACKET", "COMMA", 
                   "NEWLINE", "NUMBER", "BOOLEAN", "STRING", "COMMENT", "IDENTIFIER", 
-                  "WS", "ILLEGAL_ESCAPE", "UNCLOSE_STRING", "ERROR_CHAR", 
+                  "WS", "ILLEGAL_ESCAPE", "UNCLOSE_STRING", "ERROR_TOKEN", 
                   "INTEGER", "DECIMAL", "EXPONENT", "ESCAPE_SEQUENCE" ]
 
     grammarFileName = "ZCode.g4"
@@ -266,7 +266,7 @@ class ZCodeLexer(Lexer):
             actions[42] = self.STRING_action 
             actions[46] = self.ILLEGAL_ESCAPE_action 
             actions[47] = self.UNCLOSE_STRING_action 
-            actions[48] = self.ERROR_CHAR_action 
+            actions[48] = self.ERROR_TOKEN_action 
             self._actions = actions
         action = self._actions.get(ruleIndex, None)
         if action is not None:
@@ -290,7 +290,7 @@ class ZCodeLexer(Lexer):
             raise UncloseString(self.text[1:])
      
 
-    def ERROR_CHAR_action(self, localctx:RuleContext , actionIndex:int):
+    def ERROR_TOKEN_action(self, localctx:RuleContext , actionIndex:int):
         if actionIndex == 3:
             raise ErrorToken(self.text)
      
