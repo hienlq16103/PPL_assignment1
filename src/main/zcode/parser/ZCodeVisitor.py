@@ -274,8 +274,8 @@ class ZCodeVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by ZCodeParser#element_expression.
-    def visitElement_expression(self, ctx:ZCodeParser.Element_expressionContext):
+    # Visit a parse tree produced by ZCodeParser#element_extract_expression.
+    def visitElement_extract_expression(self, ctx:ZCodeParser.Element_extract_expressionContext):
         return self.visitChildren(ctx)
 
 

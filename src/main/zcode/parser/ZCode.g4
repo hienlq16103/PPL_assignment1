@@ -250,6 +250,7 @@ RIGHT_SQUARE_BRACKET: ']';
 COMMA: ',';
 NEWLINE: '\r'? '\n';
 //----------------------- Literals ----------------------
+UNCLOSE_STRING: '"' (ESCAPE_SEQUENCE | ~["\r\n\\])* ('\'"')? {raise UncloseString(self.text[1:])};
 
 NUMBER: INTEGER DECIMAL? EXPONENT?;
 BOOLEAN: 'true' | 'false';
@@ -262,13 +263,13 @@ COMMENT: '##' .*? ('\r'? '\n' | EOF) -> skip;
 IDENTIFIER: [a-zA-Z_] [a-zA-Z0-9_]*;
 WS : [ \t\b\f]+ -> skip ; // skip spaces, tabs, newlines
 ILLEGAL_ESCAPE: '"' (ESCAPE_SEQUENCE | ~["\r\n\\])* '\\' ~[bfrnt'\\] {raise IllegalEscape(self.text[1:])};
-UNCLOSE_STRING: '"' (ESCAPE_SEQUENCE | ~["\r\n\\])* {raise UncloseString(self.text[1:])};
+
 ERROR_TOKEN: . {raise ErrorToken(self.text)};
 
 //======================= FRAGMENTS =======================
 //----------------------- Literals ----------------------
 
 fragment INTEGER: [0-9]+;
-fragment DECIMAL: . [0-9]*;
+fragment DECIMAL: '.' [0-9]*;
 fragment EXPONENT: [eE] [+-]? [0-9]+;
 fragment ESCAPE_SEQUENCE: '\\b' | '\\f' | '\\r' | '\\n' | '\\t' | '\\\'' | '\\\\' | '\'"';
