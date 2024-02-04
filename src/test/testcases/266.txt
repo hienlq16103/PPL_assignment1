@@ -1,0 +1,13 @@
+## my program
+        func max(number a, number b, number c)
+        begin
+            if (a >= b) begin
+                if (a >= c) return a
+                else return c
+            end
+            else if (b >= c)
+                return b
+            else 
+                return c
+        end
+        

@@ -1,0 +1,7 @@
+## my program
+        func main() begin
+            number sum <- 0
+            number index <-0 
+            for index until index >= 10 by 1 sum <- sum + index
+        end
+        

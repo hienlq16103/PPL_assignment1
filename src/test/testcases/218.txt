@@ -1,0 +1,5 @@
+## my program
+        number x <- 1
+        bool isValid <- true ## flag
+        string str <- "Hello world"
+        

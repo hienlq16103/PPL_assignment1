@@ -1,0 +1,10 @@
+## my program
+        func main()
+        begin
+            ## assign pi value
+            
+            pi <- 3.14
+            
+            F()[3] <- 2*6+9 
+        end
+        

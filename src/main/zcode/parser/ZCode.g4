@@ -2,7 +2,7 @@ grammar ZCode;
 
 @lexer::header {
 from lexererr import *
-2113376
+#2113376
 }
 options {
 	language=Python3;
@@ -36,9 +36,11 @@ array_value
 	| LEFT_SQUARE_BRACKET multi_dimension_value RIGHT_SQUARE_BRACKET
 	;
 multi_dimension_value
-	: single_dimension_value COMMA multi_dimension_value
-	| single_dimension_value
+	: single_dimension_value extra_dimension_value
 	;
+extra_dimension_value
+	: COMMA single_dimension_value extra_dimension_value
+	| COMMA single_dimension_value;
 single_dimension_value: LEFT_SQUARE_BRACKET array_element_list RIGHT_SQUARE_BRACKET;
 array_element_list
 	: expression COMMA array_element_list
@@ -61,7 +63,8 @@ extra_parameter
 parameter: primitive_type IDENTIFIER (array_size | );
 
 function_body
-	: (block | return_statement)
+	: block 
+	| return_statement
 	| newline_list
 	;
 
@@ -86,7 +89,8 @@ simple_statement
 conditional_statement: open_statement | close_statement;
 
 open_statement
-	: open_if open_elif_list
+	: simple_statement
+	| open_if open_elif_list
 	| close_if close_elif_list open_else
 	;
 close_statement
@@ -95,7 +99,7 @@ close_statement
 	;
 
 open_if
-	: IF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list (simple_statement | open_statement );
+	: IF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list open_statement;
 close_if: IF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list close_statement ;
 
 open_else: ELSE nullable_newline_list open_statement;
@@ -111,7 +115,7 @@ close_elif_list
 	;
 
 open_elif
-	: ELIF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list (simple_statement | open_statement);
+	: ELIF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list open_statement;
 close_elif: ELIF LEFT_PARENTHESIS expression RIGHT_PARENTHESIS nullable_newline_list close_statement;
 
 

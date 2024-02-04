@@ -1,0 +1,5 @@
+## my program
+        func main() begin
+            return -a -b-c + 1*2*3*4 + (a and b[1,2] and foo()[1])
+        end
+        

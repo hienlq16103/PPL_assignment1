@@ -64,6 +64,11 @@ class ZCodeVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by ZCodeParser#extra_dimension_value.
+    def visitExtra_dimension_value(self, ctx:ZCodeParser.Extra_dimension_valueContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by ZCodeParser#single_dimension_value.
     def visitSingle_dimension_value(self, ctx:ZCodeParser.Single_dimension_valueContext):
         return self.visitChildren(ctx)

@@ -1,0 +1,7 @@
+## my program
+        func foo(number a, bool b[]) begin 
+            ## begin function
+            return true
+            
+        end
+        

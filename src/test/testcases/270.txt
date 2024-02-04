@@ -1,0 +1,8 @@
+## my program
+        func main() begin
+            if (a = true) 
+                if (b = true)
+                    return true
+                else return false
+        end
+        

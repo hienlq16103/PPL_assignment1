@@ -1,0 +1,5 @@
+## my program
+        func main() begin
+            foo(foo1(a,b,c),1,15,(1+1))
+        
+        

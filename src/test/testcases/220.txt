@@ -1,0 +1,9 @@
+## my program
+        number x <- true
+        
+        
+        bool isValid <- 1.1 
+        
+        string str <- "Hello world"
+        dynamic k <- false
+        

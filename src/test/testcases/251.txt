@@ -1,0 +1,8 @@
+## my program
+        func foo(number a, bool b[5])
+            begin
+                begin
+                
+                end
+            end
+        

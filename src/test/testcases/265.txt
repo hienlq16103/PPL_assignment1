@@ -1,0 +1,8 @@
+## my program
+        func max(number a, number b)
+        begin
+            number max <- a
+            if (a < b) max <- b
+            return max
+        end
+        

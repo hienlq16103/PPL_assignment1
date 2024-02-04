@@ -1,0 +1,4 @@
+## my program
+        func foo(number a, number b)
+            max()
+        

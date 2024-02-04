@@ -1,0 +1,6 @@
+## my program
+        func main() begin
+            if (a<b) return false
+            elif (a=b)
+            else return false
+            

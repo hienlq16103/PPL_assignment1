@@ -1,0 +1,4 @@
+## my program
+        for i until i >= len by 1
+            if (i % 2 = 0) sum <- sum + i
+        

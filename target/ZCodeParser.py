@@ -12,7 +12,7 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\63")
-        buf.write("\u01ee\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u01ef\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
@@ -21,212 +21,212 @@ def serializedATN():
         buf.write("&\4\'\t\'\4(\t(\4)\t)\4*\t*\4+\t+\4,\t,\4-\t-\4.\t.\4")
         buf.write("/\t/\4\60\t\60\4\61\t\61\4\62\t\62\4\63\t\63\4\64\t\64")
         buf.write("\4\65\t\65\4\66\t\66\4\67\t\67\48\t8\49\t9\4:\t:\4;\t")
-        buf.write(";\4<\t<\3\2\3\2\3\2\3\3\3\3\3\3\3\3\5\3\u0080\n\3\3\4")
-        buf.write("\3\4\5\4\u0084\n\4\3\5\3\5\5\5\u0088\n\5\3\5\3\5\3\5\3")
-        buf.write("\5\5\5\u008e\n\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5\u0096\n\5")
-        buf.write("\3\6\3\6\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\b\5\b\u00a2\n\b")
-        buf.write("\3\b\3\b\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\n\5\n\u00ae\n\n")
-        buf.write("\3\13\3\13\3\13\3\13\3\13\5\13\u00b5\n\13\3\f\3\f\3\f")
-        buf.write("\3\f\3\f\5\f\u00bc\n\f\3\r\3\r\3\r\3\r\3\16\3\16\3\16")
-        buf.write("\3\16\3\16\5\16\u00c7\n\16\3\17\3\17\3\17\3\17\3\17\3")
-        buf.write("\17\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\21\5\21\u00d7")
-        buf.write("\n\21\3\22\3\22\3\22\3\22\3\22\5\22\u00de\n\22\3\23\3")
-        buf.write("\23\3\23\3\23\5\23\u00e4\n\23\3\24\3\24\5\24\u00e8\n\24")
-        buf.write("\3\24\5\24\u00eb\n\24\3\25\3\25\3\25\3\25\3\25\3\25\3")
-        buf.write("\26\3\26\3\26\3\26\5\26\u00f7\n\26\3\27\3\27\5\27\u00fb")
-        buf.write("\n\27\3\30\3\30\3\30\3\30\3\30\3\30\3\30\3\30\5\30\u0105")
-        buf.write("\n\30\3\31\3\31\5\31\u0109\n\31\3\32\3\32\3\32\3\32\3")
-        buf.write("\32\3\32\3\32\5\32\u0112\n\32\3\33\3\33\3\33\3\33\3\33")
-        buf.write("\5\33\u0119\n\33\3\34\3\34\3\34\3\34\3\34\3\34\3\34\5")
-        buf.write("\34\u0122\n\34\3\35\3\35\3\35\3\35\3\35\3\35\3\35\3\36")
-        buf.write("\3\36\3\36\3\36\3\37\3\37\3\37\3\37\3 \3 \3 \3 \5 \u0137")
-        buf.write("\n \3!\3!\3!\3!\5!\u013d\n!\3\"\3\"\3\"\3\"\3\"\3\"\3")
-        buf.write("\"\5\"\u0146\n\"\3#\3#\3#\3#\3#\3#\3#\3$\3$\3$\3$\3$\3")
-        buf.write("$\3$\3$\3$\3%\3%\5%\u015a\n%\3%\3%\3%\3%\3&\3&\3&\3&\3")
-        buf.write("&\3&\5&\u0166\n&\3\'\3\'\3\'\3(\3(\3(\3)\3)\3)\3*\3*\3")
-        buf.write("*\3*\3*\3+\3+\3+\3+\5+\u017a\n+\3,\3,\3,\3,\3,\5,\u0181")
-        buf.write("\n,\3-\3-\3-\3-\3-\5-\u0188\n-\3.\3.\3.\3.\3.\5.\u018f")
-        buf.write("\n.\3/\3/\3/\3/\3/\3/\7/\u0197\n/\f/\16/\u019a\13/\3\60")
-        buf.write("\3\60\3\60\3\60\3\60\3\60\7\60\u01a2\n\60\f\60\16\60\u01a5")
-        buf.write("\13\60\3\61\3\61\3\61\3\61\3\61\3\61\7\61\u01ad\n\61\f")
-        buf.write("\61\16\61\u01b0\13\61\3\62\3\62\3\62\5\62\u01b5\n\62\3")
-        buf.write("\63\3\63\3\63\5\63\u01ba\n\63\3\64\3\64\3\64\3\64\3\64")
-        buf.write("\3\64\3\64\5\64\u01c3\n\64\3\65\3\65\3\65\3\65\3\66\3")
-        buf.write("\66\3\67\3\67\5\67\u01cd\n\67\3\67\3\67\3\67\3\67\38\3")
-        buf.write("8\38\38\38\39\39\39\39\39\3:\3:\3:\3:\3:\5:\u01e2\n:\3")
-        buf.write(";\3;\3;\5;\u01e7\n;\3<\3<\3<\5<\u01ec\n<\3<\2\5\\^`=\2")
-        buf.write("\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64")
-        buf.write("\668:<>@BDFHJLNPRTVXZ\\^`bdfhjlnprtv\2\b\3\2\3\5\3\2\6")
-        buf.write("\7\3\2#$\3\2\24\25\3\2\26\30\5\2\31\32\34\37!!\2\u01e7")
-        buf.write("\2x\3\2\2\2\4\177\3\2\2\2\6\u0083\3\2\2\2\b\u0095\3\2")
-        buf.write("\2\2\n\u0097\3\2\2\2\f\u0099\3\2\2\2\16\u009b\3\2\2\2")
-        buf.write("\20\u00a5\3\2\2\2\22\u00ad\3\2\2\2\24\u00b4\3\2\2\2\26")
-        buf.write("\u00bb\3\2\2\2\30\u00bd\3\2\2\2\32\u00c6\3\2\2\2\34\u00c8")
-        buf.write("\3\2\2\2\36\u00ce\3\2\2\2 \u00d6\3\2\2\2\"\u00dd\3\2\2")
-        buf.write("\2$\u00df\3\2\2\2&\u00ea\3\2\2\2(\u00ec\3\2\2\2*\u00f6")
-        buf.write("\3\2\2\2,\u00fa\3\2\2\2.\u0104\3\2\2\2\60\u0108\3\2\2")
-        buf.write("\2\62\u0111\3\2\2\2\64\u0118\3\2\2\2\66\u011a\3\2\2\2")
-        buf.write("8\u0123\3\2\2\2:\u012a\3\2\2\2<\u012e\3\2\2\2>\u0136\3")
-        buf.write("\2\2\2@\u013c\3\2\2\2B\u013e\3\2\2\2D\u0147\3\2\2\2F\u014e")
-        buf.write("\3\2\2\2H\u0159\3\2\2\2J\u0165\3\2\2\2L\u0167\3\2\2\2")
-        buf.write("N\u016a\3\2\2\2P\u016d\3\2\2\2R\u0170\3\2\2\2T\u0179\3")
-        buf.write("\2\2\2V\u0180\3\2\2\2X\u0187\3\2\2\2Z\u018e\3\2\2\2\\")
-        buf.write("\u0190\3\2\2\2^\u019b\3\2\2\2`\u01a6\3\2\2\2b\u01b4\3")
-        buf.write("\2\2\2d\u01b9\3\2\2\2f\u01c2\3\2\2\2h\u01c4\3\2\2\2j\u01c8")
-        buf.write("\3\2\2\2l\u01cc\3\2\2\2n\u01d2\3\2\2\2p\u01d7\3\2\2\2")
-        buf.write("r\u01e1\3\2\2\2t\u01e6\3\2\2\2v\u01eb\3\2\2\2xy\5\4\3")
-        buf.write("\2yz\7\2\2\3z\3\3\2\2\2{|\5\6\4\2|}\5\4\3\2}\u0080\3\2")
-        buf.write("\2\2~\u0080\5\6\4\2\177{\3\2\2\2\177~\3\2\2\2\u0080\5")
-        buf.write("\3\2\2\2\u0081\u0084\5\b\5\2\u0082\u0084\5\34\17\2\u0083")
-        buf.write("\u0081\3\2\2\2\u0083\u0082\3\2\2\2\u0084\7\3\2\2\2\u0085")
-        buf.write("\u0088\5\n\6\2\u0086\u0088\7\7\2\2\u0087\u0085\3\2\2\2")
-        buf.write("\u0087\u0086\3\2\2\2\u0088\u0089\3\2\2\2\u0089\u008a\7")
-        buf.write("\60\2\2\u008a\u0096\5t;\2\u008b\u008e\5\n\6\2\u008c\u008e")
-        buf.write("\5\f\7\2\u008d\u008b\3\2\2\2\u008d\u008c\3\2\2\2\u008e")
-        buf.write("\u008f\3\2\2\2\u008f\u0090\7\60\2\2\u0090\u0091\7\33\2")
-        buf.write("\2\u0091\u0092\5X-\2\u0092\u0093\5t;\2\u0093\u0096\3\2")
-        buf.write("\2\2\u0094\u0096\5\16\b\2\u0095\u0087\3\2\2\2\u0095\u008d")
-        buf.write("\3\2\2\2\u0095\u0094\3\2\2\2\u0096\t\3\2\2\2\u0097\u0098")
-        buf.write("\t\2\2\2\u0098\13\3\2\2\2\u0099\u009a\t\3\2\2\u009a\r")
-        buf.write("\3\2\2\2\u009b\u009c\5\n\6\2\u009c\u009d\7\60\2\2\u009d")
-        buf.write("\u00a1\5\20\t\2\u009e\u009f\7\33\2\2\u009f\u00a2\5\24")
-        buf.write("\13\2\u00a0\u00a2\3\2\2\2\u00a1\u009e\3\2\2\2\u00a1\u00a0")
-        buf.write("\3\2\2\2\u00a2\u00a3\3\2\2\2\u00a3\u00a4\5t;\2\u00a4\17")
-        buf.write("\3\2\2\2\u00a5\u00a6\7\'\2\2\u00a6\u00a7\5\22\n\2\u00a7")
-        buf.write("\u00a8\7(\2\2\u00a8\21\3\2\2\2\u00a9\u00aa\7,\2\2\u00aa")
-        buf.write("\u00ab\7)\2\2\u00ab\u00ae\5\22\n\2\u00ac\u00ae\7,\2\2")
-        buf.write("\u00ad\u00a9\3\2\2\2\u00ad\u00ac\3\2\2\2\u00ae\23\3\2")
-        buf.write("\2\2\u00af\u00b5\5\30\r\2\u00b0\u00b1\7\'\2\2\u00b1\u00b2")
-        buf.write("\5\26\f\2\u00b2\u00b3\7(\2\2\u00b3\u00b5\3\2\2\2\u00b4")
-        buf.write("\u00af\3\2\2\2\u00b4\u00b0\3\2\2\2\u00b5\25\3\2\2\2\u00b6")
-        buf.write("\u00b7\5\30\r\2\u00b7\u00b8\7)\2\2\u00b8\u00b9\5\26\f")
-        buf.write("\2\u00b9\u00bc\3\2\2\2\u00ba\u00bc\5\30\r\2\u00bb\u00b6")
-        buf.write("\3\2\2\2\u00bb\u00ba\3\2\2\2\u00bc\27\3\2\2\2\u00bd\u00be")
-        buf.write("\7\'\2\2\u00be\u00bf\5\32\16\2\u00bf\u00c0\7(\2\2\u00c0")
-        buf.write("\31\3\2\2\2\u00c1\u00c2\5X-\2\u00c2\u00c3\7)\2\2\u00c3")
-        buf.write("\u00c4\5\32\16\2\u00c4\u00c7\3\2\2\2\u00c5\u00c7\5X-\2")
-        buf.write("\u00c6\u00c1\3\2\2\2\u00c6\u00c5\3\2\2\2\u00c7\33\3\2")
-        buf.write("\2\2\u00c8\u00c9\7\t\2\2\u00c9\u00ca\7\60\2\2\u00ca\u00cb")
-        buf.write("\5\36\20\2\u00cb\u00cc\5v<\2\u00cc\u00cd\5&\24\2\u00cd")
-        buf.write("\35\3\2\2\2\u00ce\u00cf\7%\2\2\u00cf\u00d0\5 \21\2\u00d0")
-        buf.write("\u00d1\7&\2\2\u00d1\37\3\2\2\2\u00d2\u00d3\5$\23\2\u00d3")
-        buf.write("\u00d4\5\"\22\2\u00d4\u00d7\3\2\2\2\u00d5\u00d7\3\2\2")
-        buf.write("\2\u00d6\u00d2\3\2\2\2\u00d6\u00d5\3\2\2\2\u00d7!\3\2")
-        buf.write("\2\2\u00d8\u00d9\7)\2\2\u00d9\u00da\5$\23\2\u00da\u00db")
-        buf.write("\5\"\22\2\u00db\u00de\3\2\2\2\u00dc\u00de\3\2\2\2\u00dd")
-        buf.write("\u00d8\3\2\2\2\u00dd\u00dc\3\2\2\2\u00de#\3\2\2\2\u00df")
-        buf.write("\u00e0\5\n\6\2\u00e0\u00e3\7\60\2\2\u00e1\u00e4\5\20\t")
-        buf.write("\2\u00e2\u00e4\3\2\2\2\u00e3\u00e1\3\2\2\2\u00e3\u00e2")
-        buf.write("\3\2\2\2\u00e4%\3\2\2\2\u00e5\u00e8\5(\25\2\u00e6\u00e8")
-        buf.write("\5J&\2\u00e7\u00e5\3\2\2\2\u00e7\u00e6\3\2\2\2\u00e8\u00eb")
-        buf.write("\3\2\2\2\u00e9\u00eb\5t;\2\u00ea\u00e7\3\2\2\2\u00ea\u00e9")
-        buf.write("\3\2\2\2\u00eb\'\3\2\2\2\u00ec\u00ed\7\22\2\2\u00ed\u00ee")
-        buf.write("\5t;\2\u00ee\u00ef\5*\26\2\u00ef\u00f0\7\23\2\2\u00f0")
-        buf.write("\u00f1\5t;\2\u00f1)\3\2\2\2\u00f2\u00f3\5,\27\2\u00f3")
-        buf.write("\u00f4\5*\26\2\u00f4\u00f7\3\2\2\2\u00f5\u00f7\3\2\2\2")
-        buf.write("\u00f6\u00f2\3\2\2\2\u00f6\u00f5\3\2\2\2\u00f7+\3\2\2")
-        buf.write("\2\u00f8\u00fb\5.\30\2\u00f9\u00fb\5\60\31\2\u00fa\u00f8")
-        buf.write("\3\2\2\2\u00fa\u00f9\3\2\2\2\u00fb-\3\2\2\2\u00fc\u0105")
-        buf.write("\5\b\5\2\u00fd\u0105\5H%\2\u00fe\u0105\5L\'\2\u00ff\u0105")
-        buf.write("\5N(\2\u0100\u0105\5J&\2\u0101\u0105\5P)\2\u0102\u0105")
-        buf.write("\5(\25\2\u0103\u0105\5F$\2\u0104\u00fc\3\2\2\2\u0104\u00fd")
-        buf.write("\3\2\2\2\u0104\u00fe\3\2\2\2\u0104\u00ff\3\2\2\2\u0104")
-        buf.write("\u0100\3\2\2\2\u0104\u0101\3\2\2\2\u0104\u0102\3\2\2\2")
-        buf.write("\u0104\u0103\3\2\2\2\u0105/\3\2\2\2\u0106\u0109\5\62\32")
-        buf.write("\2\u0107\u0109\5\64\33\2\u0108\u0106\3\2\2\2\u0108\u0107")
-        buf.write("\3\2\2\2\u0109\61\3\2\2\2\u010a\u010b\5\66\34\2\u010b")
-        buf.write("\u010c\5> \2\u010c\u0112\3\2\2\2\u010d\u010e\58\35\2\u010e")
-        buf.write("\u010f\5@!\2\u010f\u0110\5:\36\2\u0110\u0112\3\2\2\2\u0111")
-        buf.write("\u010a\3\2\2\2\u0111\u010d\3\2\2\2\u0112\63\3\2\2\2\u0113")
-        buf.write("\u0119\5.\30\2\u0114\u0115\58\35\2\u0115\u0116\5@!\2\u0116")
-        buf.write("\u0117\5<\37\2\u0117\u0119\3\2\2\2\u0118\u0113\3\2\2\2")
-        buf.write("\u0118\u0114\3\2\2\2\u0119\65\3\2\2\2\u011a\u011b\7\17")
-        buf.write("\2\2\u011b\u011c\7%\2\2\u011c\u011d\5X-\2\u011d\u011e")
-        buf.write("\7&\2\2\u011e\u0121\5v<\2\u011f\u0122\5.\30\2\u0120\u0122")
-        buf.write("\5\62\32\2\u0121\u011f\3\2\2\2\u0121\u0120\3\2\2\2\u0122")
-        buf.write("\67\3\2\2\2\u0123\u0124\7\17\2\2\u0124\u0125\7%\2\2\u0125")
-        buf.write("\u0126\5X-\2\u0126\u0127\7&\2\2\u0127\u0128\5v<\2\u0128")
-        buf.write("\u0129\5\64\33\2\u01299\3\2\2\2\u012a\u012b\7\20\2\2\u012b")
-        buf.write("\u012c\5v<\2\u012c\u012d\5\62\32\2\u012d;\3\2\2\2\u012e")
-        buf.write("\u012f\7\20\2\2\u012f\u0130\5v<\2\u0130\u0131\5\64\33")
-        buf.write("\2\u0131=\3\2\2\2\u0132\u0133\5B\"\2\u0133\u0134\5> \2")
-        buf.write("\u0134\u0137\3\2\2\2\u0135\u0137\3\2\2\2\u0136\u0132\3")
-        buf.write("\2\2\2\u0136\u0135\3\2\2\2\u0137?\3\2\2\2\u0138\u0139")
-        buf.write("\5D#\2\u0139\u013a\5@!\2\u013a\u013d\3\2\2\2\u013b\u013d")
-        buf.write("\3\2\2\2\u013c\u0138\3\2\2\2\u013c\u013b\3\2\2\2\u013d")
-        buf.write("A\3\2\2\2\u013e\u013f\7\21\2\2\u013f\u0140\7%\2\2\u0140")
-        buf.write("\u0141\5X-\2\u0141\u0142\7&\2\2\u0142\u0145\5v<\2\u0143")
-        buf.write("\u0146\5.\30\2\u0144\u0146\5\62\32\2\u0145\u0143\3\2\2")
-        buf.write("\2\u0145\u0144\3\2\2\2\u0146C\3\2\2\2\u0147\u0148\7\21")
-        buf.write("\2\2\u0148\u0149\7%\2\2\u0149\u014a\5X-\2\u014a\u014b")
-        buf.write("\7&\2\2\u014b\u014c\5v<\2\u014c\u014d\5\64\33\2\u014d")
-        buf.write("E\3\2\2\2\u014e\u014f\7\n\2\2\u014f\u0150\7\60\2\2\u0150")
-        buf.write("\u0151\7\13\2\2\u0151\u0152\5X-\2\u0152\u0153\7\f\2\2")
-        buf.write("\u0153\u0154\5X-\2\u0154\u0155\5v<\2\u0155\u0156\5,\27")
-        buf.write("\2\u0156G\3\2\2\2\u0157\u015a\7\60\2\2\u0158\u015a\5p")
-        buf.write("9\2\u0159\u0157\3\2\2\2\u0159\u0158\3\2\2\2\u015a\u015b")
-        buf.write("\3\2\2\2\u015b\u015c\7\33\2\2\u015c\u015d\5X-\2\u015d")
-        buf.write("\u015e\5t;\2\u015eI\3\2\2\2\u015f\u0160\7\b\2\2\u0160")
-        buf.write("\u0161\5X-\2\u0161\u0162\5t;\2\u0162\u0166\3\2\2\2\u0163")
-        buf.write("\u0164\7\b\2\2\u0164\u0166\5t;\2\u0165\u015f\3\2\2\2\u0165")
-        buf.write("\u0163\3\2\2\2\u0166K\3\2\2\2\u0167\u0168\7\r\2\2\u0168")
-        buf.write("\u0169\5t;\2\u0169M\3\2\2\2\u016a\u016b\7\16\2\2\u016b")
-        buf.write("\u016c\5t;\2\u016cO\3\2\2\2\u016d\u016e\5R*\2\u016e\u016f")
-        buf.write("\5t;\2\u016fQ\3\2\2\2\u0170\u0171\7\60\2\2\u0171\u0172")
-        buf.write("\7%\2\2\u0172\u0173\5T+\2\u0173\u0174\7&\2\2\u0174S\3")
-        buf.write("\2\2\2\u0175\u0176\5X-\2\u0176\u0177\5V,\2\u0177\u017a")
-        buf.write("\3\2\2\2\u0178\u017a\3\2\2\2\u0179\u0175\3\2\2\2\u0179")
-        buf.write("\u0178\3\2\2\2\u017aU\3\2\2\2\u017b\u017c\7)\2\2\u017c")
-        buf.write("\u017d\5X-\2\u017d\u017e\5V,\2\u017e\u0181\3\2\2\2\u017f")
-        buf.write("\u0181\3\2\2\2\u0180\u017b\3\2\2\2\u0180\u017f\3\2\2\2")
-        buf.write("\u0181W\3\2\2\2\u0182\u0183\5Z.\2\u0183\u0184\7 \2\2\u0184")
-        buf.write("\u0185\5Z.\2\u0185\u0188\3\2\2\2\u0186\u0188\5Z.\2\u0187")
-        buf.write("\u0182\3\2\2\2\u0187\u0186\3\2\2\2\u0188Y\3\2\2\2\u0189")
-        buf.write("\u018a\5\\/\2\u018a\u018b\5j\66\2\u018b\u018c\5\\/\2\u018c")
-        buf.write("\u018f\3\2\2\2\u018d\u018f\5\\/\2\u018e\u0189\3\2\2\2")
-        buf.write("\u018e\u018d\3\2\2\2\u018f[\3\2\2\2\u0190\u0191\b/\1\2")
-        buf.write("\u0191\u0192\5^\60\2\u0192\u0198\3\2\2\2\u0193\u0194\f")
-        buf.write("\4\2\2\u0194\u0195\t\4\2\2\u0195\u0197\5^\60\2\u0196\u0193")
-        buf.write("\3\2\2\2\u0197\u019a\3\2\2\2\u0198\u0196\3\2\2\2\u0198")
-        buf.write("\u0199\3\2\2\2\u0199]\3\2\2\2\u019a\u0198\3\2\2\2\u019b")
-        buf.write("\u019c\b\60\1\2\u019c\u019d\5`\61\2\u019d\u01a3\3\2\2")
-        buf.write("\2\u019e\u019f\f\4\2\2\u019f\u01a0\t\5\2\2\u01a0\u01a2")
-        buf.write("\5`\61\2\u01a1\u019e\3\2\2\2\u01a2\u01a5\3\2\2\2\u01a3")
-        buf.write("\u01a1\3\2\2\2\u01a3\u01a4\3\2\2\2\u01a4_\3\2\2\2\u01a5")
-        buf.write("\u01a3\3\2\2\2\u01a6\u01a7\b\61\1\2\u01a7\u01a8\5b\62")
-        buf.write("\2\u01a8\u01ae\3\2\2\2\u01a9\u01aa\f\4\2\2\u01aa\u01ab")
-        buf.write("\t\6\2\2\u01ab\u01ad\5b\62\2\u01ac\u01a9\3\2\2\2\u01ad")
-        buf.write("\u01b0\3\2\2\2\u01ae\u01ac\3\2\2\2\u01ae\u01af\3\2\2\2")
-        buf.write("\u01afa\3\2\2\2\u01b0\u01ae\3\2\2\2\u01b1\u01b2\7\"\2")
-        buf.write("\2\u01b2\u01b5\5b\62\2\u01b3\u01b5\5d\63\2\u01b4\u01b1")
-        buf.write("\3\2\2\2\u01b4\u01b3\3\2\2\2\u01b5c\3\2\2\2\u01b6\u01b7")
-        buf.write("\7\25\2\2\u01b7\u01ba\5d\63\2\u01b8\u01ba\5f\64\2\u01b9")
-        buf.write("\u01b6\3\2\2\2\u01b9\u01b8\3\2\2\2\u01bae\3\2\2\2\u01bb")
-        buf.write("\u01c3\7,\2\2\u01bc\u01c3\7-\2\2\u01bd\u01c3\7.\2\2\u01be")
-        buf.write("\u01c3\7\60\2\2\u01bf\u01c3\5l\67\2\u01c0\u01c3\5R*\2")
-        buf.write("\u01c1\u01c3\5h\65\2\u01c2\u01bb\3\2\2\2\u01c2\u01bc\3")
-        buf.write("\2\2\2\u01c2\u01bd\3\2\2\2\u01c2\u01be\3\2\2\2\u01c2\u01bf")
-        buf.write("\3\2\2\2\u01c2\u01c0\3\2\2\2\u01c2\u01c1\3\2\2\2\u01c3")
-        buf.write("g\3\2\2\2\u01c4\u01c5\7%\2\2\u01c5\u01c6\5X-\2\u01c6\u01c7")
-        buf.write("\7&\2\2\u01c7i\3\2\2\2\u01c8\u01c9\t\7\2\2\u01c9k\3\2")
-        buf.write("\2\2\u01ca\u01cd\7\60\2\2\u01cb\u01cd\5R*\2\u01cc\u01ca")
-        buf.write("\3\2\2\2\u01cc\u01cb\3\2\2\2\u01cd\u01ce\3\2\2\2\u01ce")
-        buf.write("\u01cf\7\'\2\2\u01cf\u01d0\5r:\2\u01d0\u01d1\7(\2\2\u01d1")
-        buf.write("m\3\2\2\2\u01d2\u01d3\5R*\2\u01d3\u01d4\7\'\2\2\u01d4")
-        buf.write("\u01d5\5r:\2\u01d5\u01d6\7(\2\2\u01d6o\3\2\2\2\u01d7\u01d8")
-        buf.write("\7\60\2\2\u01d8\u01d9\7\'\2\2\u01d9\u01da\5r:\2\u01da")
-        buf.write("\u01db\7(\2\2\u01dbq\3\2\2\2\u01dc\u01dd\5X-\2\u01dd\u01de")
-        buf.write("\7)\2\2\u01de\u01df\5r:\2\u01df\u01e2\3\2\2\2\u01e0\u01e2")
-        buf.write("\5X-\2\u01e1\u01dc\3\2\2\2\u01e1\u01e0\3\2\2\2\u01e2s")
-        buf.write("\3\2\2\2\u01e3\u01e4\7*\2\2\u01e4\u01e7\5t;\2\u01e5\u01e7")
-        buf.write("\7*\2\2\u01e6\u01e3\3\2\2\2\u01e6\u01e5\3\2\2\2\u01e7")
-        buf.write("u\3\2\2\2\u01e8\u01e9\7*\2\2\u01e9\u01ec\5v<\2\u01ea\u01ec")
-        buf.write("\3\2\2\2\u01eb\u01e8\3\2\2\2\u01eb\u01ea\3\2\2\2\u01ec")
-        buf.write("w\3\2\2\2+\177\u0083\u0087\u008d\u0095\u00a1\u00ad\u00b4")
-        buf.write("\u00bb\u00c6\u00d6\u00dd\u00e3\u00e7\u00ea\u00f6\u00fa")
-        buf.write("\u0104\u0108\u0111\u0118\u0121\u0136\u013c\u0145\u0159")
-        buf.write("\u0165\u0179\u0180\u0187\u018e\u0198\u01a3\u01ae\u01b4")
-        buf.write("\u01b9\u01c2\u01cc\u01e1\u01e6\u01eb")
+        buf.write(";\4<\t<\4=\t=\3\2\3\2\3\2\3\3\3\3\3\3\3\3\5\3\u0082\n")
+        buf.write("\3\3\4\3\4\5\4\u0086\n\4\3\5\3\5\5\5\u008a\n\5\3\5\3\5")
+        buf.write("\3\5\3\5\5\5\u0090\n\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5\u0098")
+        buf.write("\n\5\3\6\3\6\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\b\5\b\u00a4")
+        buf.write("\n\b\3\b\3\b\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\n\5\n\u00b0")
+        buf.write("\n\n\3\13\3\13\3\13\3\13\3\13\5\13\u00b7\n\13\3\f\3\f")
+        buf.write("\3\f\3\r\3\r\3\r\3\r\3\r\3\r\5\r\u00c2\n\r\3\16\3\16\3")
+        buf.write("\16\3\16\3\17\3\17\3\17\3\17\3\17\5\17\u00cd\n\17\3\20")
+        buf.write("\3\20\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\21\3\22\3\22")
+        buf.write("\3\22\3\22\5\22\u00dd\n\22\3\23\3\23\3\23\3\23\3\23\5")
+        buf.write("\23\u00e4\n\23\3\24\3\24\3\24\3\24\5\24\u00ea\n\24\3\25")
+        buf.write("\3\25\3\25\5\25\u00ef\n\25\3\26\3\26\3\26\3\26\3\26\3")
+        buf.write("\26\3\27\3\27\3\27\3\27\5\27\u00fb\n\27\3\30\3\30\5\30")
+        buf.write("\u00ff\n\30\3\31\3\31\3\31\3\31\3\31\3\31\3\31\3\31\5")
+        buf.write("\31\u0109\n\31\3\32\3\32\5\32\u010d\n\32\3\33\3\33\3\33")
+        buf.write("\3\33\3\33\3\33\3\33\3\33\5\33\u0117\n\33\3\34\3\34\3")
+        buf.write("\34\3\34\3\34\5\34\u011e\n\34\3\35\3\35\3\35\3\35\3\35")
+        buf.write("\3\35\3\35\3\36\3\36\3\36\3\36\3\36\3\36\3\36\3\37\3\37")
+        buf.write("\3\37\3\37\3 \3 \3 \3 \3!\3!\3!\3!\5!\u013a\n!\3\"\3\"")
+        buf.write("\3\"\3\"\5\"\u0140\n\"\3#\3#\3#\3#\3#\3#\3#\3$\3$\3$\3")
+        buf.write("$\3$\3$\3$\3%\3%\3%\3%\3%\3%\3%\3%\3%\3&\3&\5&\u015b\n")
+        buf.write("&\3&\3&\3&\3&\3\'\3\'\3\'\3\'\3\'\3\'\5\'\u0167\n\'\3")
+        buf.write("(\3(\3(\3)\3)\3)\3*\3*\3*\3+\3+\3+\3+\3+\3,\3,\3,\3,\5")
+        buf.write(",\u017b\n,\3-\3-\3-\3-\3-\5-\u0182\n-\3.\3.\3.\3.\3.\5")
+        buf.write(".\u0189\n.\3/\3/\3/\3/\3/\5/\u0190\n/\3\60\3\60\3\60\3")
+        buf.write("\60\3\60\3\60\7\60\u0198\n\60\f\60\16\60\u019b\13\60\3")
+        buf.write("\61\3\61\3\61\3\61\3\61\3\61\7\61\u01a3\n\61\f\61\16\61")
+        buf.write("\u01a6\13\61\3\62\3\62\3\62\3\62\3\62\3\62\7\62\u01ae")
+        buf.write("\n\62\f\62\16\62\u01b1\13\62\3\63\3\63\3\63\5\63\u01b6")
+        buf.write("\n\63\3\64\3\64\3\64\5\64\u01bb\n\64\3\65\3\65\3\65\3")
+        buf.write("\65\3\65\3\65\3\65\5\65\u01c4\n\65\3\66\3\66\3\66\3\66")
+        buf.write("\3\67\3\67\38\38\58\u01ce\n8\38\38\38\38\39\39\39\39\3")
+        buf.write("9\3:\3:\3:\3:\3:\3;\3;\3;\3;\3;\5;\u01e3\n;\3<\3<\3<\5")
+        buf.write("<\u01e8\n<\3=\3=\3=\5=\u01ed\n=\3=\2\5^`b>\2\4\6\b\n\f")
+        buf.write("\16\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<>@")
+        buf.write("BDFHJLNPRTVXZ\\^`bdfhjlnprtvx\2\b\3\2\3\5\3\2\6\7\3\2")
+        buf.write("#$\3\2\24\25\3\2\26\30\5\2\31\32\34\37!!\2\u01e6\2z\3")
+        buf.write("\2\2\2\4\u0081\3\2\2\2\6\u0085\3\2\2\2\b\u0097\3\2\2\2")
+        buf.write("\n\u0099\3\2\2\2\f\u009b\3\2\2\2\16\u009d\3\2\2\2\20\u00a7")
+        buf.write("\3\2\2\2\22\u00af\3\2\2\2\24\u00b6\3\2\2\2\26\u00b8\3")
+        buf.write("\2\2\2\30\u00c1\3\2\2\2\32\u00c3\3\2\2\2\34\u00cc\3\2")
+        buf.write("\2\2\36\u00ce\3\2\2\2 \u00d4\3\2\2\2\"\u00dc\3\2\2\2$")
+        buf.write("\u00e3\3\2\2\2&\u00e5\3\2\2\2(\u00ee\3\2\2\2*\u00f0\3")
+        buf.write("\2\2\2,\u00fa\3\2\2\2.\u00fe\3\2\2\2\60\u0108\3\2\2\2")
+        buf.write("\62\u010c\3\2\2\2\64\u0116\3\2\2\2\66\u011d\3\2\2\28\u011f")
+        buf.write("\3\2\2\2:\u0126\3\2\2\2<\u012d\3\2\2\2>\u0131\3\2\2\2")
+        buf.write("@\u0139\3\2\2\2B\u013f\3\2\2\2D\u0141\3\2\2\2F\u0148\3")
+        buf.write("\2\2\2H\u014f\3\2\2\2J\u015a\3\2\2\2L\u0166\3\2\2\2N\u0168")
+        buf.write("\3\2\2\2P\u016b\3\2\2\2R\u016e\3\2\2\2T\u0171\3\2\2\2")
+        buf.write("V\u017a\3\2\2\2X\u0181\3\2\2\2Z\u0188\3\2\2\2\\\u018f")
+        buf.write("\3\2\2\2^\u0191\3\2\2\2`\u019c\3\2\2\2b\u01a7\3\2\2\2")
+        buf.write("d\u01b5\3\2\2\2f\u01ba\3\2\2\2h\u01c3\3\2\2\2j\u01c5\3")
+        buf.write("\2\2\2l\u01c9\3\2\2\2n\u01cd\3\2\2\2p\u01d3\3\2\2\2r\u01d8")
+        buf.write("\3\2\2\2t\u01e2\3\2\2\2v\u01e7\3\2\2\2x\u01ec\3\2\2\2")
+        buf.write("z{\5\4\3\2{|\7\2\2\3|\3\3\2\2\2}~\5\6\4\2~\177\5\4\3\2")
+        buf.write("\177\u0082\3\2\2\2\u0080\u0082\5\6\4\2\u0081}\3\2\2\2")
+        buf.write("\u0081\u0080\3\2\2\2\u0082\5\3\2\2\2\u0083\u0086\5\b\5")
+        buf.write("\2\u0084\u0086\5\36\20\2\u0085\u0083\3\2\2\2\u0085\u0084")
+        buf.write("\3\2\2\2\u0086\7\3\2\2\2\u0087\u008a\5\n\6\2\u0088\u008a")
+        buf.write("\7\7\2\2\u0089\u0087\3\2\2\2\u0089\u0088\3\2\2\2\u008a")
+        buf.write("\u008b\3\2\2\2\u008b\u008c\7\60\2\2\u008c\u0098\5v<\2")
+        buf.write("\u008d\u0090\5\n\6\2\u008e\u0090\5\f\7\2\u008f\u008d\3")
+        buf.write("\2\2\2\u008f\u008e\3\2\2\2\u0090\u0091\3\2\2\2\u0091\u0092")
+        buf.write("\7\60\2\2\u0092\u0093\7\33\2\2\u0093\u0094\5Z.\2\u0094")
+        buf.write("\u0095\5v<\2\u0095\u0098\3\2\2\2\u0096\u0098\5\16\b\2")
+        buf.write("\u0097\u0089\3\2\2\2\u0097\u008f\3\2\2\2\u0097\u0096\3")
+        buf.write("\2\2\2\u0098\t\3\2\2\2\u0099\u009a\t\2\2\2\u009a\13\3")
+        buf.write("\2\2\2\u009b\u009c\t\3\2\2\u009c\r\3\2\2\2\u009d\u009e")
+        buf.write("\5\n\6\2\u009e\u009f\7\60\2\2\u009f\u00a3\5\20\t\2\u00a0")
+        buf.write("\u00a1\7\33\2\2\u00a1\u00a4\5\24\13\2\u00a2\u00a4\3\2")
+        buf.write("\2\2\u00a3\u00a0\3\2\2\2\u00a3\u00a2\3\2\2\2\u00a4\u00a5")
+        buf.write("\3\2\2\2\u00a5\u00a6\5v<\2\u00a6\17\3\2\2\2\u00a7\u00a8")
+        buf.write("\7\'\2\2\u00a8\u00a9\5\22\n\2\u00a9\u00aa\7(\2\2\u00aa")
+        buf.write("\21\3\2\2\2\u00ab\u00ac\7,\2\2\u00ac\u00ad\7)\2\2\u00ad")
+        buf.write("\u00b0\5\22\n\2\u00ae\u00b0\7,\2\2\u00af\u00ab\3\2\2\2")
+        buf.write("\u00af\u00ae\3\2\2\2\u00b0\23\3\2\2\2\u00b1\u00b7\5\32")
+        buf.write("\16\2\u00b2\u00b3\7\'\2\2\u00b3\u00b4\5\26\f\2\u00b4\u00b5")
+        buf.write("\7(\2\2\u00b5\u00b7\3\2\2\2\u00b6\u00b1\3\2\2\2\u00b6")
+        buf.write("\u00b2\3\2\2\2\u00b7\25\3\2\2\2\u00b8\u00b9\5\32\16\2")
+        buf.write("\u00b9\u00ba\5\30\r\2\u00ba\27\3\2\2\2\u00bb\u00bc\7)")
+        buf.write("\2\2\u00bc\u00bd\5\32\16\2\u00bd\u00be\5\30\r\2\u00be")
+        buf.write("\u00c2\3\2\2\2\u00bf\u00c0\7)\2\2\u00c0\u00c2\5\32\16")
+        buf.write("\2\u00c1\u00bb\3\2\2\2\u00c1\u00bf\3\2\2\2\u00c2\31\3")
+        buf.write("\2\2\2\u00c3\u00c4\7\'\2\2\u00c4\u00c5\5\34\17\2\u00c5")
+        buf.write("\u00c6\7(\2\2\u00c6\33\3\2\2\2\u00c7\u00c8\5Z.\2\u00c8")
+        buf.write("\u00c9\7)\2\2\u00c9\u00ca\5\34\17\2\u00ca\u00cd\3\2\2")
+        buf.write("\2\u00cb\u00cd\5Z.\2\u00cc\u00c7\3\2\2\2\u00cc\u00cb\3")
+        buf.write("\2\2\2\u00cd\35\3\2\2\2\u00ce\u00cf\7\t\2\2\u00cf\u00d0")
+        buf.write("\7\60\2\2\u00d0\u00d1\5 \21\2\u00d1\u00d2\5x=\2\u00d2")
+        buf.write("\u00d3\5(\25\2\u00d3\37\3\2\2\2\u00d4\u00d5\7%\2\2\u00d5")
+        buf.write("\u00d6\5\"\22\2\u00d6\u00d7\7&\2\2\u00d7!\3\2\2\2\u00d8")
+        buf.write("\u00d9\5&\24\2\u00d9\u00da\5$\23\2\u00da\u00dd\3\2\2\2")
+        buf.write("\u00db\u00dd\3\2\2\2\u00dc\u00d8\3\2\2\2\u00dc\u00db\3")
+        buf.write("\2\2\2\u00dd#\3\2\2\2\u00de\u00df\7)\2\2\u00df\u00e0\5")
+        buf.write("&\24\2\u00e0\u00e1\5$\23\2\u00e1\u00e4\3\2\2\2\u00e2\u00e4")
+        buf.write("\3\2\2\2\u00e3\u00de\3\2\2\2\u00e3\u00e2\3\2\2\2\u00e4")
+        buf.write("%\3\2\2\2\u00e5\u00e6\5\n\6\2\u00e6\u00e9\7\60\2\2\u00e7")
+        buf.write("\u00ea\5\20\t\2\u00e8\u00ea\3\2\2\2\u00e9\u00e7\3\2\2")
+        buf.write("\2\u00e9\u00e8\3\2\2\2\u00ea\'\3\2\2\2\u00eb\u00ef\5*")
+        buf.write("\26\2\u00ec\u00ef\5L\'\2\u00ed\u00ef\5v<\2\u00ee\u00eb")
+        buf.write("\3\2\2\2\u00ee\u00ec\3\2\2\2\u00ee\u00ed\3\2\2\2\u00ef")
+        buf.write(")\3\2\2\2\u00f0\u00f1\7\22\2\2\u00f1\u00f2\5v<\2\u00f2")
+        buf.write("\u00f3\5,\27\2\u00f3\u00f4\7\23\2\2\u00f4\u00f5\5v<\2")
+        buf.write("\u00f5+\3\2\2\2\u00f6\u00f7\5.\30\2\u00f7\u00f8\5,\27")
+        buf.write("\2\u00f8\u00fb\3\2\2\2\u00f9\u00fb\3\2\2\2\u00fa\u00f6")
+        buf.write("\3\2\2\2\u00fa\u00f9\3\2\2\2\u00fb-\3\2\2\2\u00fc\u00ff")
+        buf.write("\5\60\31\2\u00fd\u00ff\5\62\32\2\u00fe\u00fc\3\2\2\2\u00fe")
+        buf.write("\u00fd\3\2\2\2\u00ff/\3\2\2\2\u0100\u0109\5\b\5\2\u0101")
+        buf.write("\u0109\5J&\2\u0102\u0109\5N(\2\u0103\u0109\5P)\2\u0104")
+        buf.write("\u0109\5L\'\2\u0105\u0109\5R*\2\u0106\u0109\5*\26\2\u0107")
+        buf.write("\u0109\5H%\2\u0108\u0100\3\2\2\2\u0108\u0101\3\2\2\2\u0108")
+        buf.write("\u0102\3\2\2\2\u0108\u0103\3\2\2\2\u0108\u0104\3\2\2\2")
+        buf.write("\u0108\u0105\3\2\2\2\u0108\u0106\3\2\2\2\u0108\u0107\3")
+        buf.write("\2\2\2\u0109\61\3\2\2\2\u010a\u010d\5\64\33\2\u010b\u010d")
+        buf.write("\5\66\34\2\u010c\u010a\3\2\2\2\u010c\u010b\3\2\2\2\u010d")
+        buf.write("\63\3\2\2\2\u010e\u0117\5\60\31\2\u010f\u0110\58\35\2")
+        buf.write("\u0110\u0111\5@!\2\u0111\u0117\3\2\2\2\u0112\u0113\5:")
+        buf.write("\36\2\u0113\u0114\5B\"\2\u0114\u0115\5<\37\2\u0115\u0117")
+        buf.write("\3\2\2\2\u0116\u010e\3\2\2\2\u0116\u010f\3\2\2\2\u0116")
+        buf.write("\u0112\3\2\2\2\u0117\65\3\2\2\2\u0118\u011e\5\60\31\2")
+        buf.write("\u0119\u011a\5:\36\2\u011a\u011b\5B\"\2\u011b\u011c\5")
+        buf.write("> \2\u011c\u011e\3\2\2\2\u011d\u0118\3\2\2\2\u011d\u0119")
+        buf.write("\3\2\2\2\u011e\67\3\2\2\2\u011f\u0120\7\17\2\2\u0120\u0121")
+        buf.write("\7%\2\2\u0121\u0122\5Z.\2\u0122\u0123\7&\2\2\u0123\u0124")
+        buf.write("\5x=\2\u0124\u0125\5\64\33\2\u01259\3\2\2\2\u0126\u0127")
+        buf.write("\7\17\2\2\u0127\u0128\7%\2\2\u0128\u0129\5Z.\2\u0129\u012a")
+        buf.write("\7&\2\2\u012a\u012b\5x=\2\u012b\u012c\5\66\34\2\u012c")
+        buf.write(";\3\2\2\2\u012d\u012e\7\20\2\2\u012e\u012f\5x=\2\u012f")
+        buf.write("\u0130\5\64\33\2\u0130=\3\2\2\2\u0131\u0132\7\20\2\2\u0132")
+        buf.write("\u0133\5x=\2\u0133\u0134\5\66\34\2\u0134?\3\2\2\2\u0135")
+        buf.write("\u0136\5D#\2\u0136\u0137\5@!\2\u0137\u013a\3\2\2\2\u0138")
+        buf.write("\u013a\3\2\2\2\u0139\u0135\3\2\2\2\u0139\u0138\3\2\2\2")
+        buf.write("\u013aA\3\2\2\2\u013b\u013c\5F$\2\u013c\u013d\5B\"\2\u013d")
+        buf.write("\u0140\3\2\2\2\u013e\u0140\3\2\2\2\u013f\u013b\3\2\2\2")
+        buf.write("\u013f\u013e\3\2\2\2\u0140C\3\2\2\2\u0141\u0142\7\21\2")
+        buf.write("\2\u0142\u0143\7%\2\2\u0143\u0144\5Z.\2\u0144\u0145\7")
+        buf.write("&\2\2\u0145\u0146\5x=\2\u0146\u0147\5\64\33\2\u0147E\3")
+        buf.write("\2\2\2\u0148\u0149\7\21\2\2\u0149\u014a\7%\2\2\u014a\u014b")
+        buf.write("\5Z.\2\u014b\u014c\7&\2\2\u014c\u014d\5x=\2\u014d\u014e")
+        buf.write("\5\66\34\2\u014eG\3\2\2\2\u014f\u0150\7\n\2\2\u0150\u0151")
+        buf.write("\7\60\2\2\u0151\u0152\7\13\2\2\u0152\u0153\5Z.\2\u0153")
+        buf.write("\u0154\7\f\2\2\u0154\u0155\5Z.\2\u0155\u0156\5x=\2\u0156")
+        buf.write("\u0157\5.\30\2\u0157I\3\2\2\2\u0158\u015b\7\60\2\2\u0159")
+        buf.write("\u015b\5r:\2\u015a\u0158\3\2\2\2\u015a\u0159\3\2\2\2\u015b")
+        buf.write("\u015c\3\2\2\2\u015c\u015d\7\33\2\2\u015d\u015e\5Z.\2")
+        buf.write("\u015e\u015f\5v<\2\u015fK\3\2\2\2\u0160\u0161\7\b\2\2")
+        buf.write("\u0161\u0162\5Z.\2\u0162\u0163\5v<\2\u0163\u0167\3\2\2")
+        buf.write("\2\u0164\u0165\7\b\2\2\u0165\u0167\5v<\2\u0166\u0160\3")
+        buf.write("\2\2\2\u0166\u0164\3\2\2\2\u0167M\3\2\2\2\u0168\u0169")
+        buf.write("\7\r\2\2\u0169\u016a\5v<\2\u016aO\3\2\2\2\u016b\u016c")
+        buf.write("\7\16\2\2\u016c\u016d\5v<\2\u016dQ\3\2\2\2\u016e\u016f")
+        buf.write("\5T+\2\u016f\u0170\5v<\2\u0170S\3\2\2\2\u0171\u0172\7")
+        buf.write("\60\2\2\u0172\u0173\7%\2\2\u0173\u0174\5V,\2\u0174\u0175")
+        buf.write("\7&\2\2\u0175U\3\2\2\2\u0176\u0177\5Z.\2\u0177\u0178\5")
+        buf.write("X-\2\u0178\u017b\3\2\2\2\u0179\u017b\3\2\2\2\u017a\u0176")
+        buf.write("\3\2\2\2\u017a\u0179\3\2\2\2\u017bW\3\2\2\2\u017c\u017d")
+        buf.write("\7)\2\2\u017d\u017e\5Z.\2\u017e\u017f\5X-\2\u017f\u0182")
+        buf.write("\3\2\2\2\u0180\u0182\3\2\2\2\u0181\u017c\3\2\2\2\u0181")
+        buf.write("\u0180\3\2\2\2\u0182Y\3\2\2\2\u0183\u0184\5\\/\2\u0184")
+        buf.write("\u0185\7 \2\2\u0185\u0186\5\\/\2\u0186\u0189\3\2\2\2\u0187")
+        buf.write("\u0189\5\\/\2\u0188\u0183\3\2\2\2\u0188\u0187\3\2\2\2")
+        buf.write("\u0189[\3\2\2\2\u018a\u018b\5^\60\2\u018b\u018c\5l\67")
+        buf.write("\2\u018c\u018d\5^\60\2\u018d\u0190\3\2\2\2\u018e\u0190")
+        buf.write("\5^\60\2\u018f\u018a\3\2\2\2\u018f\u018e\3\2\2\2\u0190")
+        buf.write("]\3\2\2\2\u0191\u0192\b\60\1\2\u0192\u0193\5`\61\2\u0193")
+        buf.write("\u0199\3\2\2\2\u0194\u0195\f\4\2\2\u0195\u0196\t\4\2\2")
+        buf.write("\u0196\u0198\5`\61\2\u0197\u0194\3\2\2\2\u0198\u019b\3")
+        buf.write("\2\2\2\u0199\u0197\3\2\2\2\u0199\u019a\3\2\2\2\u019a_")
+        buf.write("\3\2\2\2\u019b\u0199\3\2\2\2\u019c\u019d\b\61\1\2\u019d")
+        buf.write("\u019e\5b\62\2\u019e\u01a4\3\2\2\2\u019f\u01a0\f\4\2\2")
+        buf.write("\u01a0\u01a1\t\5\2\2\u01a1\u01a3\5b\62\2\u01a2\u019f\3")
+        buf.write("\2\2\2\u01a3\u01a6\3\2\2\2\u01a4\u01a2\3\2\2\2\u01a4\u01a5")
+        buf.write("\3\2\2\2\u01a5a\3\2\2\2\u01a6\u01a4\3\2\2\2\u01a7\u01a8")
+        buf.write("\b\62\1\2\u01a8\u01a9\5d\63\2\u01a9\u01af\3\2\2\2\u01aa")
+        buf.write("\u01ab\f\4\2\2\u01ab\u01ac\t\6\2\2\u01ac\u01ae\5d\63\2")
+        buf.write("\u01ad\u01aa\3\2\2\2\u01ae\u01b1\3\2\2\2\u01af\u01ad\3")
+        buf.write("\2\2\2\u01af\u01b0\3\2\2\2\u01b0c\3\2\2\2\u01b1\u01af")
+        buf.write("\3\2\2\2\u01b2\u01b3\7\"\2\2\u01b3\u01b6\5d\63\2\u01b4")
+        buf.write("\u01b6\5f\64\2\u01b5\u01b2\3\2\2\2\u01b5\u01b4\3\2\2\2")
+        buf.write("\u01b6e\3\2\2\2\u01b7\u01b8\7\25\2\2\u01b8\u01bb\5f\64")
+        buf.write("\2\u01b9\u01bb\5h\65\2\u01ba\u01b7\3\2\2\2\u01ba\u01b9")
+        buf.write("\3\2\2\2\u01bbg\3\2\2\2\u01bc\u01c4\7,\2\2\u01bd\u01c4")
+        buf.write("\7-\2\2\u01be\u01c4\7.\2\2\u01bf\u01c4\7\60\2\2\u01c0")
+        buf.write("\u01c4\5n8\2\u01c1\u01c4\5T+\2\u01c2\u01c4\5j\66\2\u01c3")
+        buf.write("\u01bc\3\2\2\2\u01c3\u01bd\3\2\2\2\u01c3\u01be\3\2\2\2")
+        buf.write("\u01c3\u01bf\3\2\2\2\u01c3\u01c0\3\2\2\2\u01c3\u01c1\3")
+        buf.write("\2\2\2\u01c3\u01c2\3\2\2\2\u01c4i\3\2\2\2\u01c5\u01c6")
+        buf.write("\7%\2\2\u01c6\u01c7\5Z.\2\u01c7\u01c8\7&\2\2\u01c8k\3")
+        buf.write("\2\2\2\u01c9\u01ca\t\7\2\2\u01cam\3\2\2\2\u01cb\u01ce")
+        buf.write("\7\60\2\2\u01cc\u01ce\5T+\2\u01cd\u01cb\3\2\2\2\u01cd")
+        buf.write("\u01cc\3\2\2\2\u01ce\u01cf\3\2\2\2\u01cf\u01d0\7\'\2\2")
+        buf.write("\u01d0\u01d1\5t;\2\u01d1\u01d2\7(\2\2\u01d2o\3\2\2\2\u01d3")
+        buf.write("\u01d4\5T+\2\u01d4\u01d5\7\'\2\2\u01d5\u01d6\5t;\2\u01d6")
+        buf.write("\u01d7\7(\2\2\u01d7q\3\2\2\2\u01d8\u01d9\7\60\2\2\u01d9")
+        buf.write("\u01da\7\'\2\2\u01da\u01db\5t;\2\u01db\u01dc\7(\2\2\u01dc")
+        buf.write("s\3\2\2\2\u01dd\u01de\5Z.\2\u01de\u01df\7)\2\2\u01df\u01e0")
+        buf.write("\5t;\2\u01e0\u01e3\3\2\2\2\u01e1\u01e3\5Z.\2\u01e2\u01dd")
+        buf.write("\3\2\2\2\u01e2\u01e1\3\2\2\2\u01e3u\3\2\2\2\u01e4\u01e5")
+        buf.write("\7*\2\2\u01e5\u01e8\5v<\2\u01e6\u01e8\7*\2\2\u01e7\u01e4")
+        buf.write("\3\2\2\2\u01e7\u01e6\3\2\2\2\u01e8w\3\2\2\2\u01e9\u01ea")
+        buf.write("\7*\2\2\u01ea\u01ed\5x=\2\u01eb\u01ed\3\2\2\2\u01ec\u01e9")
+        buf.write("\3\2\2\2\u01ec\u01eb\3\2\2\2\u01edy\3\2\2\2(\u0081\u0085")
+        buf.write("\u0089\u008f\u0097\u00a3\u00af\u00b6\u00c1\u00cc\u00dc")
+        buf.write("\u00e3\u00e9\u00ee\u00fa\u00fe\u0108\u010c\u0116\u011d")
+        buf.write("\u0139\u013f\u015a\u0166\u017a\u0181\u0188\u018f\u0199")
+        buf.write("\u01a4\u01af\u01b5\u01ba\u01c3\u01cd\u01e2\u01e7\u01ec")
         return buf.getvalue()
 
 
@@ -271,62 +271,63 @@ class ZCodeParser ( Parser ):
     RULE_array_size_list = 8
     RULE_array_value = 9
     RULE_multi_dimension_value = 10
-    RULE_single_dimension_value = 11
-    RULE_array_element_list = 12
-    RULE_function_declaration = 13
-    RULE_parameter_declaration = 14
-    RULE_parameter_list = 15
-    RULE_extra_parameter = 16
-    RULE_parameter = 17
-    RULE_function_body = 18
-    RULE_block = 19
-    RULE_statement_list = 20
-    RULE_statement = 21
-    RULE_simple_statement = 22
-    RULE_conditional_statement = 23
-    RULE_open_statement = 24
-    RULE_close_statement = 25
-    RULE_open_if = 26
-    RULE_close_if = 27
-    RULE_open_else = 28
-    RULE_close_else = 29
-    RULE_open_elif_list = 30
-    RULE_close_elif_list = 31
-    RULE_open_elif = 32
-    RULE_close_elif = 33
-    RULE_for_statement = 34
-    RULE_assignment_statement = 35
-    RULE_return_statement = 36
-    RULE_break_statement = 37
-    RULE_continue_statement = 38
-    RULE_function_call_statement = 39
-    RULE_function_call = 40
-    RULE_argument_list = 41
-    RULE_extra_argument_list = 42
-    RULE_expression = 43
-    RULE_expression1 = 44
-    RULE_expression2 = 45
-    RULE_expression3 = 46
-    RULE_expression4 = 47
-    RULE_expression5 = 48
-    RULE_expression6 = 49
-    RULE_expression7 = 50
-    RULE_sub_expression = 51
-    RULE_relational_operator = 52
-    RULE_element_extract_expression = 53
-    RULE_function_extract_expression = 54
-    RULE_array_extract_expression = 55
-    RULE_index_operators = 56
-    RULE_newline_list = 57
-    RULE_nullable_newline_list = 58
+    RULE_extra_dimension_value = 11
+    RULE_single_dimension_value = 12
+    RULE_array_element_list = 13
+    RULE_function_declaration = 14
+    RULE_parameter_declaration = 15
+    RULE_parameter_list = 16
+    RULE_extra_parameter = 17
+    RULE_parameter = 18
+    RULE_function_body = 19
+    RULE_block = 20
+    RULE_statement_list = 21
+    RULE_statement = 22
+    RULE_simple_statement = 23
+    RULE_conditional_statement = 24
+    RULE_open_statement = 25
+    RULE_close_statement = 26
+    RULE_open_if = 27
+    RULE_close_if = 28
+    RULE_open_else = 29
+    RULE_close_else = 30
+    RULE_open_elif_list = 31
+    RULE_close_elif_list = 32
+    RULE_open_elif = 33
+    RULE_close_elif = 34
+    RULE_for_statement = 35
+    RULE_assignment_statement = 36
+    RULE_return_statement = 37
+    RULE_break_statement = 38
+    RULE_continue_statement = 39
+    RULE_function_call_statement = 40
+    RULE_function_call = 41
+    RULE_argument_list = 42
+    RULE_extra_argument_list = 43
+    RULE_expression = 44
+    RULE_expression1 = 45
+    RULE_expression2 = 46
+    RULE_expression3 = 47
+    RULE_expression4 = 48
+    RULE_expression5 = 49
+    RULE_expression6 = 50
+    RULE_expression7 = 51
+    RULE_sub_expression = 52
+    RULE_relational_operator = 53
+    RULE_element_extract_expression = 54
+    RULE_function_extract_expression = 55
+    RULE_array_extract_expression = 56
+    RULE_index_operators = 57
+    RULE_newline_list = 58
+    RULE_nullable_newline_list = 59
 
     ruleNames =  [ "program", "declaration_list", "declaration", "variable_declaration", 
                    "primitive_type", "impicit_type", "array_declaration", 
                    "array_size", "array_size_list", "array_value", "multi_dimension_value", 
-                   "single_dimension_value", "array_element_list", "function_declaration", 
-                   "parameter_declaration", "parameter_list", "extra_parameter", 
-                   "parameter", "function_body", "block", "statement_list", 
-                   "statement", "simple_statement", "conditional_statement", 
+                   "extra_dimension_value", "single_dimension_value", "array_element_list", 
+                   "function_declaration", "parameter_declaration", "parameter_list", 
+                   "extra_parameter", "parameter", "function_body", "block", 
+                   "statement_list", "statement", "simple_statement", "conditional_statement", 
                    "open_statement", "close_statement", "open_if", "close_if", 
                    "open_else", "close_else", "open_elif_list", "close_elif_list", 
                    "open_elif", "close_elif", "for_statement", "assignment_statement", 
@@ -431,9 +432,9 @@ class ZCodeParser ( Parser ):
         self.enterRule(localctx, 0, self.RULE_program)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 118
+            self.state = 120
             self.declaration_list()
-            self.state = 119
+            self.state = 121
             self.match(ZCodeParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -476,20 +477,20 @@ class ZCodeParser ( Parser ):
         localctx = ZCodeParser.Declaration_listContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_declaration_list)
         try:
-            self.state = 125
+            self.state = 127
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 121
+                self.state = 123
                 self.declaration()
-                self.state = 122
+                self.state = 124
                 self.declaration_list()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 124
+                self.state = 126
                 self.declaration()
                 pass
 
@@ -535,17 +536,17 @@ class ZCodeParser ( Parser ):
         localctx = ZCodeParser.DeclarationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_declaration)
         try:
-            self.state = 129
+            self.state = 131
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING, ZCodeParser.VAR, ZCodeParser.DYNAMIC]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 127
+                self.state = 129
                 self.variable_declaration()
                 pass
             elif token in [ZCodeParser.FUNCTION]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 128
+                self.state = 130
                 self.function_declaration()
                 pass
             else:
@@ -613,60 +614,60 @@ class ZCodeParser ( Parser ):
         localctx = ZCodeParser.Variable_declarationContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_variable_declaration)
         try:
-            self.state = 147
+            self.state = 149
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 133
+                self.state = 135
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
                 if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING]:
-                    self.state = 131
+                    self.state = 133
                     self.primitive_type()
                     pass
                 elif token in [ZCodeParser.DYNAMIC]:
-                    self.state = 132
+                    self.state = 134
                     self.match(ZCodeParser.DYNAMIC)
                     pass
                 else:
                     raise NoViableAltException(self)
 
-                self.state = 135
+                self.state = 137
                 self.match(ZCodeParser.IDENTIFIER)
-                self.state = 136
+                self.state = 138
                 self.newline_list()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 139
+                self.state = 141
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
                 if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING]:
-                    self.state = 137
+                    self.state = 139
                     self.primitive_type()
                     pass
                 elif token in [ZCodeParser.VAR, ZCodeParser.DYNAMIC]:
-                    self.state = 138
+                    self.state = 140
                     self.impicit_type()
                     pass
                 else:
                     raise NoViableAltException(self)
 
-                self.state = 141
-                self.match(ZCodeParser.IDENTIFIER)
-                self.state = 142
-                self.match(ZCodeParser.ASSIGNMENT)
                 self.state = 143
-                self.expression()
+                self.match(ZCodeParser.IDENTIFIER)
                 self.state = 144
+                self.match(ZCodeParser.ASSIGNMENT)
+                self.state = 145
+                self.expression()
+                self.state = 146
                 self.newline_list()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 146
+                self.state = 148
                 self.array_declaration()
                 pass
 
@@ -715,7 +716,7 @@ class ZCodeParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 149
+            self.state = 151
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << ZCodeParser.TYPE_NUMBER) | (1 << ZCodeParser.TYPE_BOOL) | (1 << ZCodeParser.TYPE_STRING))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -763,7 +764,7 @@ class ZCodeParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 151
+            self.state = 153
             _la = self._input.LA(1)
             if not(_la==ZCodeParser.VAR or _la==ZCodeParser.DYNAMIC):
                 self._errHandler.recoverInline(self)
@@ -826,19 +827,19 @@ class ZCodeParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_array_declaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 153
-            self.primitive_type()
-            self.state = 154
-            self.match(ZCodeParser.IDENTIFIER)
             self.state = 155
+            self.primitive_type()
+            self.state = 156
+            self.match(ZCodeParser.IDENTIFIER)
+            self.state = 157
             self.array_size()
-            self.state = 159
+            self.state = 161
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.ASSIGNMENT]:
-                self.state = 156
+                self.state = 158
                 self.match(ZCodeParser.ASSIGNMENT)
-                self.state = 157
+                self.state = 159
                 self.array_value()
                 pass
             elif token in [ZCodeParser.NEWLINE]:
@@ -846,7 +847,7 @@ class ZCodeParser ( Parser ):
             else:
                 raise NoViableAltException(self)
 
-            self.state = 161
+            self.state = 163
             self.newline_list()
         except RecognitionException as re:
             localctx.exception = re
@@ -892,11 +893,11 @@ class ZCodeParser ( Parser ):
         self.enterRule(localctx, 14, self.RULE_array_size)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 163
-            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
-            self.state = 164
-            self.array_size_list()
             self.state = 165
+            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
+            self.state = 166
+            self.array_size_list()
+            self.state = 167
             self.match(ZCodeParser.RIGHT_SQUARE_BRACKET)
         except RecognitionException as re:
             localctx.exception = re
@@ -941,22 +942,22 @@ class ZCodeParser ( Parser ):
         localctx = ZCodeParser.Array_size_listContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_array_size_list)
         try:
-            self.state = 171
+            self.state = 173
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 167
-                self.match(ZCodeParser.NUMBER)
-                self.state = 168
-                self.match(ZCodeParser.COMMA)
                 self.state = 169
+                self.match(ZCodeParser.NUMBER)
+                self.state = 170
+                self.match(ZCodeParser.COMMA)
+                self.state = 171
                 self.array_size_list()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 170
+                self.state = 172
                 self.match(ZCodeParser.NUMBER)
                 pass
 
@@ -1008,22 +1009,22 @@ class ZCodeParser ( Parser ):
         localctx = ZCodeParser.Array_valueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_array_value)
         try:
-            self.state = 178
+            self.state = 180
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 173
+                self.state = 175
                 self.single_dimension_value()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 174
-                self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
-                self.state = 175
-                self.multi_dimension_value()
                 self.state = 176
+                self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
+                self.state = 177
+                self.multi_dimension_value()
+                self.state = 178
                 self.match(ZCodeParser.RIGHT_SQUARE_BRACKET)
                 pass
 
@@ -1048,11 +1049,8 @@ class ZCodeParser ( Parser ):
             return self.getTypedRuleContext(ZCodeParser.Single_dimension_valueContext,0)
 
 
-        def COMMA(self):
-            return self.getToken(ZCodeParser.COMMA, 0)
-
-        def multi_dimension_value(self):
-            return self.getTypedRuleContext(ZCodeParser.Multi_dimension_valueContext,0)
+        def extra_dimension_value(self):
+            return self.getTypedRuleContext(ZCodeParser.Extra_dimension_valueContext,0)
 
 
         def getRuleIndex(self):
@@ -1072,22 +1070,73 @@ class ZCodeParser ( Parser ):
         localctx = ZCodeParser.Multi_dimension_valueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_multi_dimension_value)
         try:
-            self.state = 185
+            self.enterOuterAlt(localctx, 1)
+            self.state = 182
+            self.single_dimension_value()
+            self.state = 183
+            self.extra_dimension_value()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Extra_dimension_valueContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def COMMA(self):
+            return self.getToken(ZCodeParser.COMMA, 0)
+
+        def single_dimension_value(self):
+            return self.getTypedRuleContext(ZCodeParser.Single_dimension_valueContext,0)
+
+
+        def extra_dimension_value(self):
+            return self.getTypedRuleContext(ZCodeParser.Extra_dimension_valueContext,0)
+
+
+        def getRuleIndex(self):
+            return ZCodeParser.RULE_extra_dimension_value
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExtra_dimension_value" ):
+                return visitor.visitExtra_dimension_value(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def extra_dimension_value(self):
+
+        localctx = ZCodeParser.Extra_dimension_valueContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 22, self.RULE_extra_dimension_value)
+        try:
+            self.state = 191
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,8,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 180
-                self.single_dimension_value()
-                self.state = 181
+                self.state = 185
                 self.match(ZCodeParser.COMMA)
-                self.state = 182
-                self.multi_dimension_value()
+                self.state = 186
+                self.single_dimension_value()
+                self.state = 187
+                self.extra_dimension_value()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 184
+                self.state = 189
+                self.match(ZCodeParser.COMMA)
+                self.state = 190
                 self.single_dimension_value()
                 pass
 
@@ -1133,14 +1182,14 @@ class ZCodeParser ( Parser ):
     def single_dimension_value(self):
 
         localctx = ZCodeParser.Single_dimension_valueContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_single_dimension_value)
+        self.enterRule(localctx, 24, self.RULE_single_dimension_value)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 187
+            self.state = 193
             self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
-            self.state = 188
+            self.state = 194
             self.array_element_list()
-            self.state = 189
+            self.state = 195
             self.match(ZCodeParser.RIGHT_SQUARE_BRACKET)
         except RecognitionException as re:
             localctx.exception = re
@@ -1184,24 +1233,24 @@ class ZCodeParser ( Parser ):
     def array_element_list(self):
 
         localctx = ZCodeParser.Array_element_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_array_element_list)
+        self.enterRule(localctx, 26, self.RULE_array_element_list)
         try:
-            self.state = 196
+            self.state = 202
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,9,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 191
+                self.state = 197
                 self.expression()
-                self.state = 192
+                self.state = 198
                 self.match(ZCodeParser.COMMA)
-                self.state = 193
+                self.state = 199
                 self.array_element_list()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 195
+                self.state = 201
                 self.expression()
                 pass
 
@@ -1255,18 +1304,18 @@ class ZCodeParser ( Parser ):
     def function_declaration(self):
 
         localctx = ZCodeParser.Function_declarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_function_declaration)
+        self.enterRule(localctx, 28, self.RULE_function_declaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 198
+            self.state = 204
             self.match(ZCodeParser.FUNCTION)
-            self.state = 199
+            self.state = 205
             self.match(ZCodeParser.IDENTIFIER)
-            self.state = 200
+            self.state = 206
             self.parameter_declaration()
-            self.state = 201
+            self.state = 207
             self.nullable_newline_list()
-            self.state = 202
+            self.state = 208
             self.function_body()
         except RecognitionException as re:
             localctx.exception = re
@@ -1309,14 +1358,14 @@ class ZCodeParser ( Parser ):
     def parameter_declaration(self):
 
         localctx = ZCodeParser.Parameter_declarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_parameter_declaration)
+        self.enterRule(localctx, 30, self.RULE_parameter_declaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 204
+            self.state = 210
             self.match(ZCodeParser.LEFT_PARENTHESIS)
-            self.state = 205
+            self.state = 211
             self.parameter_list()
-            self.state = 206
+            self.state = 212
             self.match(ZCodeParser.RIGHT_PARENTHESIS)
         except RecognitionException as re:
             localctx.exception = re
@@ -1357,16 +1406,16 @@ class ZCodeParser ( Parser ):
     def parameter_list(self):
 
         localctx = ZCodeParser.Parameter_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_parameter_list)
+        self.enterRule(localctx, 32, self.RULE_parameter_list)
         try:
-            self.state = 212
+            self.state = 218
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 208
+                self.state = 214
                 self.parameter()
-                self.state = 209
+                self.state = 215
                 self.extra_parameter()
                 pass
             elif token in [ZCodeParser.RIGHT_PARENTHESIS]:
@@ -1418,18 +1467,18 @@ class ZCodeParser ( Parser ):
     def extra_parameter(self):
 
         localctx = ZCodeParser.Extra_parameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_extra_parameter)
+        self.enterRule(localctx, 34, self.RULE_extra_parameter)
         try:
-            self.state = 219
+            self.state = 225
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.COMMA]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 214
+                self.state = 220
                 self.match(ZCodeParser.COMMA)
-                self.state = 215
+                self.state = 221
                 self.parameter()
-                self.state = 216
+                self.state = 222
                 self.extra_parameter()
                 pass
             elif token in [ZCodeParser.RIGHT_PARENTHESIS]:
@@ -1481,18 +1530,18 @@ class ZCodeParser ( Parser ):
     def parameter(self):
 
         localctx = ZCodeParser.ParameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_parameter)
+        self.enterRule(localctx, 36, self.RULE_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 221
+            self.state = 227
             self.primitive_type()
-            self.state = 222
+            self.state = 228
             self.match(ZCodeParser.IDENTIFIER)
-            self.state = 225
+            self.state = 231
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.LEFT_SQUARE_BRACKET]:
-                self.state = 223
+                self.state = 229
                 self.array_size()
                 pass
             elif token in [ZCodeParser.RIGHT_PARENTHESIS, ZCodeParser.COMMA]:
@@ -1543,31 +1592,24 @@ class ZCodeParser ( Parser ):
     def function_body(self):
 
         localctx = ZCodeParser.Function_bodyContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_function_body)
+        self.enterRule(localctx, 38, self.RULE_function_body)
         try:
-            self.state = 232
+            self.state = 236
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [ZCodeParser.RETURN, ZCodeParser.BEGIN]:
+            if token in [ZCodeParser.BEGIN]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 229
-                self._errHandler.sync(self)
-                token = self._input.LA(1)
-                if token in [ZCodeParser.BEGIN]:
-                    self.state = 227
-                    self.block()
-                    pass
-                elif token in [ZCodeParser.RETURN]:
-                    self.state = 228
-                    self.return_statement()
-                    pass
-                else:
-                    raise NoViableAltException(self)
-
+                self.state = 233
+                self.block()
+                pass
+            elif token in [ZCodeParser.RETURN]:
+                self.enterOuterAlt(localctx, 2)
+                self.state = 234
+                self.return_statement()
                 pass
             elif token in [ZCodeParser.NEWLINE]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 231
+                self.enterOuterAlt(localctx, 3)
+                self.state = 235
                 self.newline_list()
                 pass
             else:
@@ -1621,18 +1663,18 @@ class ZCodeParser ( Parser ):
     def block(self):
 
         localctx = ZCodeParser.BlockContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_block)
+        self.enterRule(localctx, 40, self.RULE_block)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 234
-            self.match(ZCodeParser.BEGIN)
-            self.state = 235
-            self.newline_list()
-            self.state = 236
-            self.statement_list()
-            self.state = 237
-            self.match(ZCodeParser.END)
             self.state = 238
+            self.match(ZCodeParser.BEGIN)
+            self.state = 239
+            self.newline_list()
+            self.state = 240
+            self.statement_list()
+            self.state = 241
+            self.match(ZCodeParser.END)
+            self.state = 242
             self.newline_list()
         except RecognitionException as re:
             localctx.exception = re
@@ -1673,16 +1715,16 @@ class ZCodeParser ( Parser ):
     def statement_list(self):
 
         localctx = ZCodeParser.Statement_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_statement_list)
+        self.enterRule(localctx, 42, self.RULE_statement_list)
         try:
-            self.state = 244
+            self.state = 248
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING, ZCodeParser.VAR, ZCodeParser.DYNAMIC, ZCodeParser.RETURN, ZCodeParser.FOR, ZCodeParser.BREAK, ZCodeParser.CONTINUE, ZCodeParser.IF, ZCodeParser.BEGIN, ZCodeParser.IDENTIFIER]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 240
+                self.state = 244
                 self.statement()
-                self.state = 241
+                self.state = 245
                 self.statement_list()
                 pass
             elif token in [ZCodeParser.END]:
@@ -1731,20 +1773,20 @@ class ZCodeParser ( Parser ):
     def statement(self):
 
         localctx = ZCodeParser.StatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_statement)
+        self.enterRule(localctx, 44, self.RULE_statement)
         try:
-            self.state = 248
+            self.state = 252
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,16,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,15,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 246
+                self.state = 250
                 self.simple_statement()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 247
+                self.state = 251
                 self.conditional_statement()
                 pass
 
@@ -1812,56 +1854,56 @@ class ZCodeParser ( Parser ):
     def simple_statement(self):
 
         localctx = ZCodeParser.Simple_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_simple_statement)
+        self.enterRule(localctx, 46, self.RULE_simple_statement)
         try:
-            self.state = 258
+            self.state = 262
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,17,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,16,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 250
+                self.state = 254
                 self.variable_declaration()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 251
+                self.state = 255
                 self.assignment_statement()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 252
+                self.state = 256
                 self.break_statement()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 253
+                self.state = 257
                 self.continue_statement()
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 254
+                self.state = 258
                 self.return_statement()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 255
+                self.state = 259
                 self.function_call_statement()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 256
+                self.state = 260
                 self.block()
                 pass
 
             elif la_ == 8:
                 self.enterOuterAlt(localctx, 8)
-                self.state = 257
+                self.state = 261
                 self.for_statement()
                 pass
 
@@ -1905,20 +1947,20 @@ class ZCodeParser ( Parser ):
     def conditional_statement(self):
 
         localctx = ZCodeParser.Conditional_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_conditional_statement)
+        self.enterRule(localctx, 48, self.RULE_conditional_statement)
         try:
-            self.state = 262
+            self.state = 266
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,18,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,17,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 260
+                self.state = 264
                 self.open_statement()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 261
+                self.state = 265
                 self.close_statement()
                 pass
 
@@ -1938,6 +1980,10 @@ class ZCodeParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+
+        def simple_statement(self):
+            return self.getTypedRuleContext(ZCodeParser.Simple_statementContext,0)
+
 
         def open_if(self):
             return self.getTypedRuleContext(ZCodeParser.Open_ifContext,0)
@@ -1974,26 +2020,32 @@ class ZCodeParser ( Parser ):
     def open_statement(self):
 
         localctx = ZCodeParser.Open_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_open_statement)
+        self.enterRule(localctx, 50, self.RULE_open_statement)
         try:
-            self.state = 271
+            self.state = 276
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,19,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,18,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 264
-                self.open_if()
-                self.state = 265
-                self.open_elif_list()
+                self.state = 268
+                self.simple_statement()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 267
-                self.close_if()
-                self.state = 268
-                self.close_elif_list()
                 self.state = 269
+                self.open_if()
+                self.state = 270
+                self.open_elif_list()
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 272
+                self.close_if()
+                self.state = 273
+                self.close_elif_list()
+                self.state = 274
                 self.open_else()
                 pass
 
@@ -2045,23 +2097,23 @@ class ZCodeParser ( Parser ):
     def close_statement(self):
 
         localctx = ZCodeParser.Close_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_close_statement)
+        self.enterRule(localctx, 52, self.RULE_close_statement)
         try:
-            self.state = 278
+            self.state = 283
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING, ZCodeParser.VAR, ZCodeParser.DYNAMIC, ZCodeParser.RETURN, ZCodeParser.FOR, ZCodeParser.BREAK, ZCodeParser.CONTINUE, ZCodeParser.BEGIN, ZCodeParser.IDENTIFIER]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 273
+                self.state = 278
                 self.simple_statement()
                 pass
             elif token in [ZCodeParser.IF]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 274
+                self.state = 279
                 self.close_if()
-                self.state = 275
+                self.state = 280
                 self.close_elif_list()
-                self.state = 276
+                self.state = 281
                 self.close_else()
                 pass
             else:
@@ -2100,10 +2152,6 @@ class ZCodeParser ( Parser ):
             return self.getTypedRuleContext(ZCodeParser.Nullable_newline_listContext,0)
 
 
-        def simple_statement(self):
-            return self.getTypedRuleContext(ZCodeParser.Simple_statementContext,0)
-
-
         def open_statement(self):
             return self.getTypedRuleContext(ZCodeParser.Open_statementContext,0)
 
@@ -2123,33 +2171,21 @@ class ZCodeParser ( Parser ):
     def open_if(self):
 
         localctx = ZCodeParser.Open_ifContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 52, self.RULE_open_if)
+        self.enterRule(localctx, 54, self.RULE_open_if)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 280
+            self.state = 285
             self.match(ZCodeParser.IF)
-            self.state = 281
+            self.state = 286
             self.match(ZCodeParser.LEFT_PARENTHESIS)
-            self.state = 282
-            self.expression()
-            self.state = 283
-            self.match(ZCodeParser.RIGHT_PARENTHESIS)
-            self.state = 284
-            self.nullable_newline_list()
             self.state = 287
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING, ZCodeParser.VAR, ZCodeParser.DYNAMIC, ZCodeParser.RETURN, ZCodeParser.FOR, ZCodeParser.BREAK, ZCodeParser.CONTINUE, ZCodeParser.BEGIN, ZCodeParser.IDENTIFIER]:
-                self.state = 285
-                self.simple_statement()
-                pass
-            elif token in [ZCodeParser.IF]:
-                self.state = 286
-                self.open_statement()
-                pass
-            else:
-                raise NoViableAltException(self)
-
+            self.expression()
+            self.state = 288
+            self.match(ZCodeParser.RIGHT_PARENTHESIS)
+            self.state = 289
+            self.nullable_newline_list()
+            self.state = 290
+            self.open_statement()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -2202,20 +2238,20 @@ class ZCodeParser ( Parser ):
     def close_if(self):
 
         localctx = ZCodeParser.Close_ifContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 54, self.RULE_close_if)
+        self.enterRule(localctx, 56, self.RULE_close_if)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 289
-            self.match(ZCodeParser.IF)
-            self.state = 290
-            self.match(ZCodeParser.LEFT_PARENTHESIS)
-            self.state = 291
-            self.expression()
             self.state = 292
-            self.match(ZCodeParser.RIGHT_PARENTHESIS)
+            self.match(ZCodeParser.IF)
             self.state = 293
-            self.nullable_newline_list()
+            self.match(ZCodeParser.LEFT_PARENTHESIS)
             self.state = 294
+            self.expression()
+            self.state = 295
+            self.match(ZCodeParser.RIGHT_PARENTHESIS)
+            self.state = 296
+            self.nullable_newline_list()
+            self.state = 297
             self.close_statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -2259,14 +2295,14 @@ class ZCodeParser ( Parser ):
     def open_else(self):
 
         localctx = ZCodeParser.Open_elseContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 56, self.RULE_open_else)
+        self.enterRule(localctx, 58, self.RULE_open_else)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 296
+            self.state = 299
             self.match(ZCodeParser.ELSE)
-            self.state = 297
+            self.state = 300
             self.nullable_newline_list()
-            self.state = 298
+            self.state = 301
             self.open_statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -2310,14 +2346,14 @@ class ZCodeParser ( Parser ):
     def close_else(self):
 
         localctx = ZCodeParser.Close_elseContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 58, self.RULE_close_else)
+        self.enterRule(localctx, 60, self.RULE_close_else)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 300
+            self.state = 303
             self.match(ZCodeParser.ELSE)
-            self.state = 301
+            self.state = 304
             self.nullable_newline_list()
-            self.state = 302
+            self.state = 305
             self.close_statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -2358,16 +2394,16 @@ class ZCodeParser ( Parser ):
     def open_elif_list(self):
 
         localctx = ZCodeParser.Open_elif_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 60, self.RULE_open_elif_list)
+        self.enterRule(localctx, 62, self.RULE_open_elif_list)
         try:
-            self.state = 308
+            self.state = 311
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,20,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 304
+                self.state = 307
                 self.open_elif()
-                self.state = 305
+                self.state = 308
                 self.open_elif_list()
                 pass
 
@@ -2416,16 +2452,16 @@ class ZCodeParser ( Parser ):
     def close_elif_list(self):
 
         localctx = ZCodeParser.Close_elif_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 62, self.RULE_close_elif_list)
+        self.enterRule(localctx, 64, self.RULE_close_elif_list)
         try:
-            self.state = 314
+            self.state = 317
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.ELIF]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 310
+                self.state = 313
                 self.close_elif()
-                self.state = 311
+                self.state = 314
                 self.close_elif_list()
                 pass
             elif token in [ZCodeParser.ELSE]:
@@ -2468,10 +2504,6 @@ class ZCodeParser ( Parser ):
             return self.getTypedRuleContext(ZCodeParser.Nullable_newline_listContext,0)
 
 
-        def simple_statement(self):
-            return self.getTypedRuleContext(ZCodeParser.Simple_statementContext,0)
-
-
         def open_statement(self):
             return self.getTypedRuleContext(ZCodeParser.Open_statementContext,0)
 
@@ -2491,33 +2523,21 @@ class ZCodeParser ( Parser ):
     def open_elif(self):
 
         localctx = ZCodeParser.Open_elifContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 64, self.RULE_open_elif)
+        self.enterRule(localctx, 66, self.RULE_open_elif)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 316
-            self.match(ZCodeParser.ELIF)
-            self.state = 317
-            self.match(ZCodeParser.LEFT_PARENTHESIS)
-            self.state = 318
-            self.expression()
             self.state = 319
-            self.match(ZCodeParser.RIGHT_PARENTHESIS)
+            self.match(ZCodeParser.ELIF)
             self.state = 320
-            self.nullable_newline_list()
+            self.match(ZCodeParser.LEFT_PARENTHESIS)
+            self.state = 321
+            self.expression()
+            self.state = 322
+            self.match(ZCodeParser.RIGHT_PARENTHESIS)
             self.state = 323
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [ZCodeParser.TYPE_NUMBER, ZCodeParser.TYPE_BOOL, ZCodeParser.TYPE_STRING, ZCodeParser.VAR, ZCodeParser.DYNAMIC, ZCodeParser.RETURN, ZCodeParser.FOR, ZCodeParser.BREAK, ZCodeParser.CONTINUE, ZCodeParser.BEGIN, ZCodeParser.IDENTIFIER]:
-                self.state = 321
-                self.simple_statement()
-                pass
-            elif token in [ZCodeParser.IF]:
-                self.state = 322
-                self.open_statement()
-                pass
-            else:
-                raise NoViableAltException(self)
-
+            self.nullable_newline_list()
+            self.state = 324
+            self.open_statement()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -2570,20 +2590,20 @@ class ZCodeParser ( Parser ):
     def close_elif(self):
 
         localctx = ZCodeParser.Close_elifContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 66, self.RULE_close_elif)
+        self.enterRule(localctx, 68, self.RULE_close_elif)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 325
-            self.match(ZCodeParser.ELIF)
             self.state = 326
-            self.match(ZCodeParser.LEFT_PARENTHESIS)
+            self.match(ZCodeParser.ELIF)
             self.state = 327
-            self.expression()
+            self.match(ZCodeParser.LEFT_PARENTHESIS)
             self.state = 328
-            self.match(ZCodeParser.RIGHT_PARENTHESIS)
+            self.expression()
             self.state = 329
-            self.nullable_newline_list()
+            self.match(ZCodeParser.RIGHT_PARENTHESIS)
             self.state = 330
+            self.nullable_newline_list()
+            self.state = 331
             self.close_statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -2643,24 +2663,24 @@ class ZCodeParser ( Parser ):
     def for_statement(self):
 
         localctx = ZCodeParser.For_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 68, self.RULE_for_statement)
+        self.enterRule(localctx, 70, self.RULE_for_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 332
-            self.match(ZCodeParser.FOR)
             self.state = 333
-            self.match(ZCodeParser.IDENTIFIER)
+            self.match(ZCodeParser.FOR)
             self.state = 334
-            self.match(ZCodeParser.UNTIL)
+            self.match(ZCodeParser.IDENTIFIER)
             self.state = 335
-            self.expression()
+            self.match(ZCodeParser.UNTIL)
             self.state = 336
-            self.match(ZCodeParser.BY)
-            self.state = 337
             self.expression()
+            self.state = 337
+            self.match(ZCodeParser.BY)
             self.state = 338
-            self.nullable_newline_list()
+            self.expression()
             self.state = 339
+            self.nullable_newline_list()
+            self.state = 340
             self.statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -2711,28 +2731,28 @@ class ZCodeParser ( Parser ):
     def assignment_statement(self):
 
         localctx = ZCodeParser.Assignment_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 70, self.RULE_assignment_statement)
+        self.enterRule(localctx, 72, self.RULE_assignment_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 343
+            self.state = 344
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,25,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
             if la_ == 1:
-                self.state = 341
+                self.state = 342
                 self.match(ZCodeParser.IDENTIFIER)
                 pass
 
             elif la_ == 2:
-                self.state = 342
+                self.state = 343
                 self.array_extract_expression()
                 pass
 
 
-            self.state = 345
-            self.match(ZCodeParser.ASSIGNMENT)
             self.state = 346
-            self.expression()
+            self.match(ZCodeParser.ASSIGNMENT)
             self.state = 347
+            self.expression()
+            self.state = 348
             self.newline_list()
         except RecognitionException as re:
             localctx.exception = re
@@ -2776,26 +2796,26 @@ class ZCodeParser ( Parser ):
     def return_statement(self):
 
         localctx = ZCodeParser.Return_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 72, self.RULE_return_statement)
+        self.enterRule(localctx, 74, self.RULE_return_statement)
         try:
-            self.state = 355
+            self.state = 356
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,26,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,23,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 349
-                self.match(ZCodeParser.RETURN)
                 self.state = 350
-                self.expression()
+                self.match(ZCodeParser.RETURN)
                 self.state = 351
+                self.expression()
+                self.state = 352
                 self.newline_list()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 353
-                self.match(ZCodeParser.RETURN)
                 self.state = 354
+                self.match(ZCodeParser.RETURN)
+                self.state = 355
                 self.newline_list()
                 pass
 
@@ -2838,12 +2858,12 @@ class ZCodeParser ( Parser ):
     def break_statement(self):
 
         localctx = ZCodeParser.Break_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 74, self.RULE_break_statement)
+        self.enterRule(localctx, 76, self.RULE_break_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 357
-            self.match(ZCodeParser.BREAK)
             self.state = 358
+            self.match(ZCodeParser.BREAK)
+            self.state = 359
             self.newline_list()
         except RecognitionException as re:
             localctx.exception = re
@@ -2883,12 +2903,12 @@ class ZCodeParser ( Parser ):
     def continue_statement(self):
 
         localctx = ZCodeParser.Continue_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 76, self.RULE_continue_statement)
+        self.enterRule(localctx, 78, self.RULE_continue_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 360
-            self.match(ZCodeParser.CONTINUE)
             self.state = 361
+            self.match(ZCodeParser.CONTINUE)
+            self.state = 362
             self.newline_list()
         except RecognitionException as re:
             localctx.exception = re
@@ -2929,12 +2949,12 @@ class ZCodeParser ( Parser ):
     def function_call_statement(self):
 
         localctx = ZCodeParser.Function_call_statementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 78, self.RULE_function_call_statement)
+        self.enterRule(localctx, 80, self.RULE_function_call_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 363
-            self.function_call()
             self.state = 364
+            self.function_call()
+            self.state = 365
             self.newline_list()
         except RecognitionException as re:
             localctx.exception = re
@@ -2980,16 +3000,16 @@ class ZCodeParser ( Parser ):
     def function_call(self):
 
         localctx = ZCodeParser.Function_callContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 80, self.RULE_function_call)
+        self.enterRule(localctx, 82, self.RULE_function_call)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 366
-            self.match(ZCodeParser.IDENTIFIER)
             self.state = 367
-            self.match(ZCodeParser.LEFT_PARENTHESIS)
+            self.match(ZCodeParser.IDENTIFIER)
             self.state = 368
-            self.argument_list()
+            self.match(ZCodeParser.LEFT_PARENTHESIS)
             self.state = 369
+            self.argument_list()
+            self.state = 370
             self.match(ZCodeParser.RIGHT_PARENTHESIS)
         except RecognitionException as re:
             localctx.exception = re
@@ -3030,16 +3050,16 @@ class ZCodeParser ( Parser ):
     def argument_list(self):
 
         localctx = ZCodeParser.Argument_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 82, self.RULE_argument_list)
+        self.enterRule(localctx, 84, self.RULE_argument_list)
         try:
-            self.state = 375
+            self.state = 376
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.MINUS, ZCodeParser.NOT, ZCodeParser.LEFT_PARENTHESIS, ZCodeParser.NUMBER, ZCodeParser.BOOLEAN, ZCodeParser.STRING, ZCodeParser.IDENTIFIER]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 371
-                self.expression()
                 self.state = 372
+                self.expression()
+                self.state = 373
                 self.extra_argument_list()
                 pass
             elif token in [ZCodeParser.RIGHT_PARENTHESIS]:
@@ -3091,18 +3111,18 @@ class ZCodeParser ( Parser ):
     def extra_argument_list(self):
 
         localctx = ZCodeParser.Extra_argument_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 84, self.RULE_extra_argument_list)
+        self.enterRule(localctx, 86, self.RULE_extra_argument_list)
         try:
-            self.state = 382
+            self.state = 383
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.COMMA]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 377
-                self.match(ZCodeParser.COMMA)
                 self.state = 378
-                self.expression()
+                self.match(ZCodeParser.COMMA)
                 self.state = 379
+                self.expression()
+                self.state = 380
                 self.extra_argument_list()
                 pass
             elif token in [ZCodeParser.RIGHT_PARENTHESIS]:
@@ -3153,24 +3173,24 @@ class ZCodeParser ( Parser ):
     def expression(self):
 
         localctx = ZCodeParser.ExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 86, self.RULE_expression)
+        self.enterRule(localctx, 88, self.RULE_expression)
         try:
-            self.state = 389
+            self.state = 390
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,29,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,26,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 384
-                self.expression1()
                 self.state = 385
-                self.match(ZCodeParser.STRING_CONCATENATION)
+                self.expression1()
                 self.state = 386
+                self.match(ZCodeParser.STRING_CONCATENATION)
+                self.state = 387
                 self.expression1()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 388
+                self.state = 389
                 self.expression1()
                 pass
 
@@ -3217,24 +3237,24 @@ class ZCodeParser ( Parser ):
     def expression1(self):
 
         localctx = ZCodeParser.Expression1Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 88, self.RULE_expression1)
+        self.enterRule(localctx, 90, self.RULE_expression1)
         try:
-            self.state = 396
+            self.state = 397
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,30,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,27,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 391
-                self.expression2(0)
                 self.state = 392
-                self.relational_operator()
+                self.expression2(0)
                 self.state = 393
+                self.relational_operator()
+                self.state = 394
                 self.expression2(0)
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 395
+                self.state = 396
                 self.expression2(0)
                 pass
 
@@ -3285,17 +3305,17 @@ class ZCodeParser ( Parser ):
         _parentState = self.state
         localctx = ZCodeParser.Expression2Context(self, self._ctx, _parentState)
         _prevctx = localctx
-        _startState = 90
-        self.enterRecursionRule(localctx, 90, self.RULE_expression2, _p)
+        _startState = 92
+        self.enterRecursionRule(localctx, 92, self.RULE_expression2, _p)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 399
+            self.state = 400
             self.expression3(0)
             self._ctx.stop = self._input.LT(-1)
-            self.state = 406
+            self.state = 407
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,31,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,28,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -3303,22 +3323,22 @@ class ZCodeParser ( Parser ):
                     _prevctx = localctx
                     localctx = ZCodeParser.Expression2Context(self, _parentctx, _parentState)
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_expression2)
-                    self.state = 401
+                    self.state = 402
                     if not self.precpred(self._ctx, 2):
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                    self.state = 402
+                    self.state = 403
                     _la = self._input.LA(1)
                     if not(_la==ZCodeParser.AND or _la==ZCodeParser.OR):
                         self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
                         self.consume()
-                    self.state = 403
+                    self.state = 404
                     self.expression3(0) 
-                self.state = 408
+                self.state = 409
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,31,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,28,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -3366,17 +3386,17 @@ class ZCodeParser ( Parser ):
         _parentState = self.state
         localctx = ZCodeParser.Expression3Context(self, self._ctx, _parentState)
         _prevctx = localctx
-        _startState = 92
-        self.enterRecursionRule(localctx, 92, self.RULE_expression3, _p)
+        _startState = 94
+        self.enterRecursionRule(localctx, 94, self.RULE_expression3, _p)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 410
+            self.state = 411
             self.expression4(0)
             self._ctx.stop = self._input.LT(-1)
-            self.state = 417
+            self.state = 418
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,32,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,29,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -3384,22 +3404,22 @@ class ZCodeParser ( Parser ):
                     _prevctx = localctx
                     localctx = ZCodeParser.Expression3Context(self, _parentctx, _parentState)
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_expression3)
-                    self.state = 412
+                    self.state = 413
                     if not self.precpred(self._ctx, 2):
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                    self.state = 413
+                    self.state = 414
                     _la = self._input.LA(1)
                     if not(_la==ZCodeParser.PLUS or _la==ZCodeParser.MINUS):
                         self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
                         self.consume()
-                    self.state = 414
+                    self.state = 415
                     self.expression4(0) 
-                self.state = 419
+                self.state = 420
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,32,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,29,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -3450,17 +3470,17 @@ class ZCodeParser ( Parser ):
         _parentState = self.state
         localctx = ZCodeParser.Expression4Context(self, self._ctx, _parentState)
         _prevctx = localctx
-        _startState = 94
-        self.enterRecursionRule(localctx, 94, self.RULE_expression4, _p)
+        _startState = 96
+        self.enterRecursionRule(localctx, 96, self.RULE_expression4, _p)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 421
+            self.state = 422
             self.expression5()
             self._ctx.stop = self._input.LT(-1)
-            self.state = 428
+            self.state = 429
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,33,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,30,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
@@ -3468,22 +3488,22 @@ class ZCodeParser ( Parser ):
                     _prevctx = localctx
                     localctx = ZCodeParser.Expression4Context(self, _parentctx, _parentState)
                     self.pushNewRecursionContext(localctx, _startState, self.RULE_expression4)
-                    self.state = 423
+                    self.state = 424
                     if not self.precpred(self._ctx, 2):
                         from antlr4.error.Errors import FailedPredicateException
                         raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
-                    self.state = 424
+                    self.state = 425
                     _la = self._input.LA(1)
                     if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << ZCodeParser.MULTIPLY) | (1 << ZCodeParser.DIVIDE) | (1 << ZCodeParser.MODULO))) != 0)):
                         self._errHandler.recoverInline(self)
                     else:
                         self._errHandler.reportMatch(self)
                         self.consume()
-                    self.state = 425
+                    self.state = 426
                     self.expression5() 
-                self.state = 430
+                self.state = 431
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,33,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,30,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -3527,21 +3547,21 @@ class ZCodeParser ( Parser ):
     def expression5(self):
 
         localctx = ZCodeParser.Expression5Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 96, self.RULE_expression5)
+        self.enterRule(localctx, 98, self.RULE_expression5)
         try:
-            self.state = 434
+            self.state = 435
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.NOT]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 431
-                self.match(ZCodeParser.NOT)
                 self.state = 432
+                self.match(ZCodeParser.NOT)
+                self.state = 433
                 self.expression5()
                 pass
             elif token in [ZCodeParser.MINUS, ZCodeParser.LEFT_PARENTHESIS, ZCodeParser.NUMBER, ZCodeParser.BOOLEAN, ZCodeParser.STRING, ZCodeParser.IDENTIFIER]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 433
+                self.state = 434
                 self.expression6()
                 pass
             else:
@@ -3589,21 +3609,21 @@ class ZCodeParser ( Parser ):
     def expression6(self):
 
         localctx = ZCodeParser.Expression6Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 98, self.RULE_expression6)
+        self.enterRule(localctx, 100, self.RULE_expression6)
         try:
-            self.state = 439
+            self.state = 440
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [ZCodeParser.MINUS]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 436
-                self.match(ZCodeParser.MINUS)
                 self.state = 437
+                self.match(ZCodeParser.MINUS)
+                self.state = 438
                 self.expression6()
                 pass
             elif token in [ZCodeParser.LEFT_PARENTHESIS, ZCodeParser.NUMBER, ZCodeParser.BOOLEAN, ZCodeParser.STRING, ZCodeParser.IDENTIFIER]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 438
+                self.state = 439
                 self.expression7()
                 pass
             else:
@@ -3664,50 +3684,50 @@ class ZCodeParser ( Parser ):
     def expression7(self):
 
         localctx = ZCodeParser.Expression7Context(self, self._ctx, self.state)
-        self.enterRule(localctx, 100, self.RULE_expression7)
+        self.enterRule(localctx, 102, self.RULE_expression7)
         try:
-            self.state = 448
+            self.state = 449
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,36,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,33,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 441
+                self.state = 442
                 self.match(ZCodeParser.NUMBER)
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 442
+                self.state = 443
                 self.match(ZCodeParser.BOOLEAN)
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 443
+                self.state = 444
                 self.match(ZCodeParser.STRING)
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 444
+                self.state = 445
                 self.match(ZCodeParser.IDENTIFIER)
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 445
+                self.state = 446
                 self.element_extract_expression()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 446
+                self.state = 447
                 self.function_call()
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 447
+                self.state = 448
                 self.sub_expression()
                 pass
 
@@ -3753,14 +3773,14 @@ class ZCodeParser ( Parser ):
     def sub_expression(self):
 
         localctx = ZCodeParser.Sub_expressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 102, self.RULE_sub_expression)
+        self.enterRule(localctx, 104, self.RULE_sub_expression)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 450
-            self.match(ZCodeParser.LEFT_PARENTHESIS)
             self.state = 451
-            self.expression()
+            self.match(ZCodeParser.LEFT_PARENTHESIS)
             self.state = 452
+            self.expression()
+            self.state = 453
             self.match(ZCodeParser.RIGHT_PARENTHESIS)
         except RecognitionException as re:
             localctx.exception = re
@@ -3814,11 +3834,11 @@ class ZCodeParser ( Parser ):
     def relational_operator(self):
 
         localctx = ZCodeParser.Relational_operatorContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 104, self.RULE_relational_operator)
+        self.enterRule(localctx, 106, self.RULE_relational_operator)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 454
+            self.state = 455
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << ZCodeParser.EQUAL) | (1 << ZCodeParser.NOT_EQUAL) | (1 << ZCodeParser.LESS_THAN) | (1 << ZCodeParser.LESS_THAN_OR_EQUAL) | (1 << ZCodeParser.GREATER_THAN) | (1 << ZCodeParser.GREATER_THAN_OR_EQUAL) | (1 << ZCodeParser.STRING_COMPARISION))) != 0)):
                 self._errHandler.recoverInline(self)
@@ -3873,28 +3893,28 @@ class ZCodeParser ( Parser ):
     def element_extract_expression(self):
 
         localctx = ZCodeParser.Element_extract_expressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 106, self.RULE_element_extract_expression)
+        self.enterRule(localctx, 108, self.RULE_element_extract_expression)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 458
+            self.state = 459
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,37,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,34,self._ctx)
             if la_ == 1:
-                self.state = 456
+                self.state = 457
                 self.match(ZCodeParser.IDENTIFIER)
                 pass
 
             elif la_ == 2:
-                self.state = 457
+                self.state = 458
                 self.function_call()
                 pass
 
 
-            self.state = 460
-            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
             self.state = 461
-            self.index_operators()
+            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
             self.state = 462
+            self.index_operators()
+            self.state = 463
             self.match(ZCodeParser.RIGHT_SQUARE_BRACKET)
         except RecognitionException as re:
             localctx.exception = re
@@ -3941,16 +3961,16 @@ class ZCodeParser ( Parser ):
     def function_extract_expression(self):
 
         localctx = ZCodeParser.Function_extract_expressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 108, self.RULE_function_extract_expression)
+        self.enterRule(localctx, 110, self.RULE_function_extract_expression)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 464
-            self.function_call()
             self.state = 465
-            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
+            self.function_call()
             self.state = 466
-            self.index_operators()
+            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
             self.state = 467
+            self.index_operators()
+            self.state = 468
             self.match(ZCodeParser.RIGHT_SQUARE_BRACKET)
         except RecognitionException as re:
             localctx.exception = re
@@ -3996,16 +4016,16 @@ class ZCodeParser ( Parser ):
     def array_extract_expression(self):
 
         localctx = ZCodeParser.Array_extract_expressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 110, self.RULE_array_extract_expression)
+        self.enterRule(localctx, 112, self.RULE_array_extract_expression)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 469
-            self.match(ZCodeParser.IDENTIFIER)
             self.state = 470
-            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
+            self.match(ZCodeParser.IDENTIFIER)
             self.state = 471
-            self.index_operators()
+            self.match(ZCodeParser.LEFT_SQUARE_BRACKET)
             self.state = 472
+            self.index_operators()
+            self.state = 473
             self.match(ZCodeParser.RIGHT_SQUARE_BRACKET)
         except RecognitionException as re:
             localctx.exception = re
@@ -4049,24 +4069,24 @@ class ZCodeParser ( Parser ):
     def index_operators(self):
 
         localctx = ZCodeParser.Index_operatorsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 112, self.RULE_index_operators)
+        self.enterRule(localctx, 114, self.RULE_index_operators)
         try:
-            self.state = 479
+            self.state = 480
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,38,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,35,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 474
-                self.expression()
                 self.state = 475
-                self.match(ZCodeParser.COMMA)
+                self.expression()
                 self.state = 476
+                self.match(ZCodeParser.COMMA)
+                self.state = 477
                 self.index_operators()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 478
+                self.state = 479
                 self.expression()
                 pass
 
@@ -4109,22 +4129,22 @@ class ZCodeParser ( Parser ):
     def newline_list(self):
 
         localctx = ZCodeParser.Newline_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 114, self.RULE_newline_list)
+        self.enterRule(localctx, 116, self.RULE_newline_list)
         try:
-            self.state = 484
+            self.state = 485
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,39,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,36,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 481
-                self.match(ZCodeParser.NEWLINE)
                 self.state = 482
+                self.match(ZCodeParser.NEWLINE)
+                self.state = 483
                 self.newline_list()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 483
+                self.state = 484
                 self.match(ZCodeParser.NEWLINE)
                 pass
 
@@ -4167,16 +4187,16 @@ class ZCodeParser ( Parser ):
     def nullable_newline_list(self):
 
         localctx = ZCodeParser.Nullable_newline_listContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 116, self.RULE_nullable_newline_list)
+        self.enterRule(localctx, 118, self.RULE_nullable_newline_list)
         try:
-            self.state = 489
+            self.state = 490
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,40,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,37,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 486
-                self.match(ZCodeParser.NEWLINE)
                 self.state = 487
+                self.match(ZCodeParser.NEWLINE)
+                self.state = 488
                 self.nullable_newline_list()
                 pass
 
@@ -4199,9 +4219,9 @@ class ZCodeParser ( Parser ):
     def sempred(self, localctx:RuleContext, ruleIndex:int, predIndex:int):
         if self._predicates == None:
             self._predicates = dict()
-        self._predicates[45] = self.expression2_sempred
-        self._predicates[46] = self.expression3_sempred
-        self._predicates[47] = self.expression4_sempred
+        self._predicates[46] = self.expression2_sempred
+        self._predicates[47] = self.expression3_sempred
+        self._predicates[48] = self.expression4_sempred
         pred = self._predicates.get(ruleIndex, None)
         if pred is None:
             raise Exception("No predicate with index:" + str(ruleIndex))

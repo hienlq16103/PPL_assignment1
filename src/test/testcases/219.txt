@@ -1,0 +1,8 @@
+## my program
+        number x <- 1
+        
+        
+        bool isValid <- true 
+        
+        string str <- "Hello world"
+        

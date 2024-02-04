@@ -1,0 +1,11 @@
+## my program
+        func main() begin
+            number array[5,5]
+            number sum <- 0
+            number i <- 0
+            number j <- j
+            for i until i >= 5 by 1
+                for j until j >=5 by 1
+                    sum <- sum + array[i,j]
+        end
+        

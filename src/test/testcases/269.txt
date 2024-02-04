@@ -1,0 +1,10 @@
+## my program
+        func main() begin
+            if (a = true)
+                continue
+            if (b = false)
+                break
+            elif (true + true) a <- 3
+            else return
+        end
+        
